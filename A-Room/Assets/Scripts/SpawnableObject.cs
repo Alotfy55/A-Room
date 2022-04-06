@@ -21,7 +21,7 @@ public class SpawnableObject : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        spawnableObject = new GameObject[50];
+        spawnableObject = new GameObject[1];
         //arCamera = GameObject.Find("AR Camera").GetComponent<Camera>();  // get the ar camera 
     }
 
@@ -36,7 +36,7 @@ public class SpawnableObject : MonoBehaviour
                     spawnableObject[counter] == null) // check for a touch and no object have been instantiate before 
                 {
                     SpawnPrefab(hits[0].pose.position); // Instantiate an object in the ar scene
-                    x = 100;
+
                 }
                 /*
                 else if (Input.GetTouch(0).phase == TouchPhase.Moved && spawnableObject != null)
@@ -51,24 +51,6 @@ public class SpawnableObject : MonoBehaviour
 
             }
         }
-
-        if (x == 0)
-        {
-            int destroy_index = -1;
-            for (int i = 0; i < counter; i++)
-            {
-                if (spawnableObject[i] != null)
-                {
-                    destroy_index = i;
-                }
-            }
-            Destroy(spawnableObject[destroy_index]);
-            x = 50;
-        }
-
-        x--;
-
-        debuggingValue.text = x.ToString();
     }
 
     private void SpawnPrefab(Vector3 spawnPos)
