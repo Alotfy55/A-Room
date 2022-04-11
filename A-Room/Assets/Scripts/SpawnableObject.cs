@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using Lean.Common;
+using Lean.Touch;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.XR.ARFoundation;
@@ -15,7 +17,6 @@ public class SpawnableObject : MonoBehaviour
     [SerializeField] private Text debuggingValue;
     Camera arCamera;
     GameObject []spawnableObject;
-    private int x = 1000;
     private int counter = 0;
 
     // Start is called before the first frame update
@@ -23,6 +24,7 @@ public class SpawnableObject : MonoBehaviour
     {
         spawnableObject = new GameObject[1];
         //arCamera = GameObject.Find("AR Camera").GetComponent<Camera>();  // get the ar camera 
+        addLeanComponents(spawnablePrefab);
     }
 
     // Update is called once per frame
@@ -36,7 +38,6 @@ public class SpawnableObject : MonoBehaviour
                     spawnableObject[counter] == null) // check for a touch and no object have been instantiate before 
                 {
                     SpawnPrefab(hits[0].pose.position); // Instantiate an object in the ar scene
-
                 }
                 /*
                 else if (Input.GetTouch(0).phase == TouchPhase.Moved && spawnableObject != null)
@@ -48,7 +49,6 @@ public class SpawnableObject : MonoBehaviour
                     //spawnableObject = null; 
                 }
                 */
-
             }
         }
     }
@@ -56,6 +56,20 @@ public class SpawnableObject : MonoBehaviour
     private void SpawnPrefab(Vector3 spawnPos)
     {
         spawnableObject[counter++] = Instantiate(spawnablePrefab, spawnPos, Quaternion.identity);
+    }
+
+    private void addLeanComponents(GameObject prefab)
+    {
+        prefab.AddComponent<LeanSelectable>();
+        prefab.AddComponent<LeanSelectableByFinger>();
+        prefab.AddComponent<LeanDragTranslate>();
+        prefab.GetComponent<LeanDragTranslate>().Use.RequiredFingerCount = 1;
+        prefab.GetComponent<LeanDragTranslate>().Camera = GameObject.Find("AR Camera").GetComponent<Camera>();
+        prefab.GetComponent<LeanDragTranslate>().Sensitivity = 2;
+        prefab.AddComponent<LeanTwistRotateAxis>();
+        prefab.AddComponent<saveYLocation>();
+
+        debuggingValue.text = "components added";
     }
 
 }
