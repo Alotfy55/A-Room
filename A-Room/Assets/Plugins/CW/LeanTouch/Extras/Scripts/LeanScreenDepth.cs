@@ -220,7 +220,7 @@ namespace Lean.Touch
 			}
 			else
 			{
-				Debug.LogError("Failed to find camera. Either tag your cameras MainCamera, or set one in this component.", gameObject);
+				//Debug.LogError("Failed to find camera. Either tag your cameras MainCamera, or set one in this component.", gameObject);
 			}
 
 			return false;
