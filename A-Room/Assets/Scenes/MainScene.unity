@@ -1899,7 +1899,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 479d695282ba6cf4ba3ab3c4848f05e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deselectWithNothing: 0
+  deselectWithNothing: 1
   limit: 0
   maxSelectables: 5
   reselect: 3
