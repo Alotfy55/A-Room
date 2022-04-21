@@ -61,6 +61,8 @@ public class SpawnableObject : MonoBehaviour
         prefab.AddComponent<LeanTwistRotateAxis>();
         prefab.GetComponent<LeanTwistRotateAxis>().Sensitivity = 2;
         prefab.AddComponent<saveYLocation>();
+        prefab.AddComponent<BoxCollider>();
+        prefab.AddComponent<Rigidbody>();
 
         debuggingValue.text = "components added";
     }
