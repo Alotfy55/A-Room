@@ -15,15 +15,15 @@ public class SpawnableObject : MonoBehaviour
     public GameObject spawnablePrefab;
 
     [SerializeField] private Text debuggingValue;
-    GameObject []spawnableObject;
-    private int counter = 0;
+    GameObject spawnableObject;
+    
     public bool picked;
 
     // Start is called before the first frame update
     void Start()
     {
         picked = false;
-        spawnableObject = new GameObject[10];
+        spawnableObject = null;
         
     }
 
@@ -34,8 +34,7 @@ public class SpawnableObject : MonoBehaviour
         {
             if (arRaycastManager.Raycast(Input.GetTouch(0).position, hits) && picked) // whether touch hits a detected plane plane
             {
-                if (Input.GetTouch(0).phase == TouchPhase.Began &&
-                    spawnableObject[counter] == null) // check for a touch and no object have been instantiate before 
+                if (Input.GetTouch(0).phase == TouchPhase.Began) // check for a touch and no object have been instantiate before 
                 {
                     addLeanComponents(spawnablePrefab); // Add components to current prefab.
                     SpawnPrefab(hits[0].pose.position); // Instantiate an object in the ar scene
@@ -47,7 +46,7 @@ public class SpawnableObject : MonoBehaviour
 
     private void SpawnPrefab(Vector3 spawnPos)
     {
-        spawnableObject[counter++] = Instantiate(spawnablePrefab, spawnPos, Quaternion.identity);
+        spawnableObject = Instantiate(spawnablePrefab, spawnPos, Quaternion.identity);
     }
 
     private void addLeanComponents(GameObject prefab)
@@ -66,6 +65,8 @@ public class SpawnableObject : MonoBehaviour
         prefab.GetComponent<Rigidbody>().useGravity = false;
         prefab.GetComponent<Rigidbody>().drag = float.MaxValue;
         prefab.GetComponent<Rigidbody>().angularDrag = float.MaxValue;
+        prefab.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotationX;
+        prefab.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotationZ;
         prefab.tag = "FurnitureModels";
 
         debuggingValue.text = "components added";
