@@ -15,7 +15,6 @@ public class SpawnableObject : MonoBehaviour
     public GameObject spawnablePrefab;
 
     [SerializeField] private Text debuggingValue;
-    Camera arCamera;
     GameObject []spawnableObject;
     private int counter = 0;
     public bool picked;
@@ -25,7 +24,6 @@ public class SpawnableObject : MonoBehaviour
     {
         picked = false;
         spawnableObject = new GameObject[10];
-        //arCamera = GameObject.Find("AR Camera").GetComponent<Camera>();  // get the ar camera 
         
     }
 
@@ -43,16 +41,6 @@ public class SpawnableObject : MonoBehaviour
                     SpawnPrefab(hits[0].pose.position); // Instantiate an object in the ar scene
                     picked = false;
                 }
-                /*
-                else if (Input.GetTouch(0).phase == TouchPhase.Moved && spawnableObject != null)
-                {
-                    spawnableObject.transform.position = hits[0].pose.position; 
-                }
-                if (Input.GetTouch(0).phase == TouchPhase.Ended)
-                {
-                    //spawnableObject = null; 
-                }
-                */
             }
         }
     }
