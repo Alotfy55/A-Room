@@ -62,7 +62,9 @@ public class SpawnableObject : MonoBehaviour
         prefab.GetComponent<LeanTwistRotateAxis>().Sensitivity = 2;
         prefab.AddComponent<saveYLocation>();
         prefab.AddComponent<BoxCollider>();
-        prefab.AddComponent<Rigidbody>();
+        //prefab.AddComponent<Rigidbody>();
+        //prefab.GetComponent<Rigidbody>().useGravity = false;
+        prefab.tag = "FurnitureModels";
 
         debuggingValue.text = "components added";
     }
