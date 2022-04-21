@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -897,7 +897,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7f1ec090bce79d478a5febf95e1ee98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  b: {fileID: 8494504146697188093, guid: e53275d5ba6cc64469b0be99abb2d008, type: 3}
+  b: {fileID: 919132149155446097, guid: 76f1513b4b4057b4fba567c71521d67d, type: 3}
   spawner: {fileID: 403012563}
   slider: {fileID: 810540141}
 --- !u!114 &351286332
@@ -1147,7 +1147,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PlanePrefab: {fileID: 4776765576899091622, guid: 3738bd65ede154463b2c35064b9e5fdb,
     type: 3}
-  m_DetectionMode: -1
+  m_DetectionMode: 1
 --- !u!114 &388525033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2248,7 +2248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7f1ec090bce79d478a5febf95e1ee98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  b: {fileID: 2791374041729404783, guid: 3dab5e7fecc9cea48801139ef1b57c72, type: 3}
+  b: {fileID: 919132149155446097, guid: 73f1701a3dc4de54887b7b33ecd628ad, type: 3}
   spawner: {fileID: 403012563}
   slider: {fileID: 810540141}
 --- !u!114 &992808922
@@ -2892,7 +2892,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7f1ec090bce79d478a5febf95e1ee98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  b: {fileID: 7140891137800849971, guid: 9b58277ae5c46f849b55acedcf785874, type: 3}
+  b: {fileID: 919132149155446097, guid: 41c6373dbcb844b4289c8935e76ab8fc, type: 3}
   spawner: {fileID: 403012563}
   slider: {fileID: 810540141}
 --- !u!114 &1347973204
