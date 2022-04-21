@@ -1,9 +1,34 @@
 fileFormatVersion: 2
-guid: bc864d0afd4e9094190b4696e6062363
+guid: d382661645a8df149afcbc7cb6bd10cd
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black_metal
+    second: {fileID: 2100000, guid: 72c44f820e292664ead684b85643fada, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dark_plastic
+    second: {fileID: 2100000, guid: 411ddb7724da068448d6e85208f35d81, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: leather_seat
+    second: {fileID: 2100000, guid: 411ddb7724da068448d6e85208f35d81, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal
+    second: {fileID: 2100000, guid: 411ddb7724da068448d6e85208f35d81, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: weel_rubber
+    second: {fileID: 2100000, guid: 411ddb7724da068448d6e85208f35d81, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -1,9 +1,34 @@
 fileFormatVersion: 2
-guid: 651bb60f536127c4aaaa8a562439d503
+guid: 12ffd83937d46b945824976a1fc68162
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: 16050a265b187854ebba10a48cd9d2a5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 2100000, guid: 16050a265b187854ebba10a48cd9d2a5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.004
+    second: {fileID: 2100000, guid: 16050a265b187854ebba10a48cd9d2a5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_sofa
+    second: {fileID: 2100000, guid: 16050a265b187854ebba10a48cd9d2a5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_sofa_bottom
+    second: {fileID: 2100000, guid: 16050a265b187854ebba10a48cd9d2a5, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

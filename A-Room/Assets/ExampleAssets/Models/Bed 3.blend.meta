@@ -3,7 +3,17 @@ guid: 0fc81e00d0f36c540a95bd45b6ed9966
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _California_King_Size_Bed_With_Thyme_Sheets_Pine_V1Pine_mat
+    second: {fileID: 2100000, guid: 301f72cfb301690419a58bfc359fd1dd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _California_King_Size_Bed_With_Thyme_Sheets_Pine_V1Thyme_Mat
+    second: {fileID: 2100000, guid: 301f72cfb301690419a58bfc359fd1dd, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

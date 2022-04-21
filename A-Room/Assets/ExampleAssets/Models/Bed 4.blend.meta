@@ -3,7 +3,12 @@ guid: 50b36c555d326844fa93f878b08516b6
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _10236_Master_Bed_King_Size_v1_L3Material__23
+    second: {fileID: 2100000, guid: c1210259d64abb740b5db98319e79a43, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

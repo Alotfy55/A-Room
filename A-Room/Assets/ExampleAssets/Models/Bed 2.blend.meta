@@ -3,7 +3,12 @@ guid: 41c6373dbcb844b4289c8935e76ab8fc
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ebony_mat
+    second: {fileID: 2100000, guid: 380f0c627bd173d4cbcf89f484d29a9a, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
