@@ -33,7 +33,11 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.visualstudio": {
+<<<<<<< Updated upstream
       "version": "2.0.8",
+=======
+      "version": "2.0.15",
+>>>>>>> Stashed changes
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -173,7 +177,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.legacyinputhelpers": {
-      "version": "2.1.7",
+      "version": "2.1.8",
       "depth": 1,
       "source": "registry",
       "dependencies": {
