@@ -5,6 +5,7 @@ using Lean.Touch;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.XR.ARFoundation;
+using UnityEngine.XR.ARSubsystems;
 
 public class SpawnableObject : MonoBehaviour
 {
@@ -32,7 +33,7 @@ public class SpawnableObject : MonoBehaviour
     {
         if (Input.touchCount > 0) // touch occured
         {
-            if (arRaycastManager.Raycast(Input.GetTouch(0).position, hits) && picked) // whether touch hits a detected plane plane
+            if (arRaycastManager.Raycast(Input.GetTouch(0).position, hits, TrackableType.PlaneWithinPolygon) && picked) // whether touch hits a detected plane plane
             {
                 if (Input.GetTouch(0).phase == TouchPhase.Began) // check for a touch and no object have been instantiate before 
                 {
@@ -51,7 +52,7 @@ public class SpawnableObject : MonoBehaviour
 
     private void addLeanComponents(GameObject prefab)
     {
-        prefab.AddComponent<LeanSelectable>();
+        prefab.AddComponent<LeanSelectableOutline>();
         prefab.AddComponent<LeanSelectableByFinger>();
         prefab.AddComponent<LeanDragTranslate>();
         prefab.GetComponent<LeanDragTranslate>().Use.RequiredFingerCount = 1;
@@ -67,6 +68,16 @@ public class SpawnableObject : MonoBehaviour
         prefab.GetComponent<Rigidbody>().angularDrag = float.MaxValue;
         prefab.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotationX;
         prefab.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotationZ;
+
+
+        var outline = prefab.AddComponent<Outline1>();
+
+        outline.OutlineMode = Outline1.Mode.OutlineVisible;
+        outline.OutlineColor = Color.cyan;
+        outline.OutlineColor2 = Color.red;
+        outline.OutlineWidth = 5f;
+        outline.enabled = false;
+
         prefab.tag = "FurnitureModels";
 
         debuggingValue.text = "components added";

@@ -253,7 +253,7 @@ MonoBehaviour:
   m_FocusMode: -1
   m_LightEstimationMode: -1
   m_AutoFocus: 1
-  m_LightEstimation: 3
+  m_LightEstimation: 28
   m_FacingDirection: 1
 --- !u!114 &22732923
 MonoBehaviour:
@@ -311,9 +311,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b15f82cc229284894964d2d30806969d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_HumanSegmentationStencilMode: 3
-  m_HumanSegmentationDepthMode: 2
-  m_EnvironmentDepthMode: 3
+  m_HumanSegmentationStencilMode: 1
+  m_HumanSegmentationDepthMode: 1
+  m_EnvironmentDepthMode: 1
   m_OcclusionPreferenceMode: 0
 --- !u!1 &40919614
 GameObject:
@@ -726,7 +726,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 809253865}
   m_HandleRect: {fileID: 809253864}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -1178,7 +1178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1760703bbd54c04488a8d10600262ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_PlanePrefab: {fileID: 4776765576899091622, guid: 3738bd65ede154463b2c35064b9e5fdb,
+  m_PlanePrefab: {fileID: 4111876437758604471, guid: 37e0f7acd891d9f47b2a1a33b9a48c0f,
     type: 3}
   m_DetectionMode: 1
 --- !u!114 &388525033
@@ -1644,10 +1644,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 705507993}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 334428f26ce8b6f42a49fa92298f48c2, type: 3}
+  m_Script: {fileID: 11500000, guid: d4e390043ea034041a47946def0b7562, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arCameraManager: {fileID: 22732922}
+  m_CameraManager: {fileID: 22732922}
 --- !u!1 &725585200
 GameObject:
   m_ObjectHideFlags: 0
@@ -2682,10 +2682,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 479d695282ba6cf4ba3ab3c4848f05e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deselectWithNothing: 1
-  limit: 0
-  maxSelectables: 5
-  reselect: 3
+  deselectWithNothing: 0
+  limit: 2
+  maxSelectables: 1
+  reselect: 0
   selectables: []
   onSelected:
     m_PersistentCalls:
