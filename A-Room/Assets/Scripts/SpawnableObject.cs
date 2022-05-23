@@ -52,31 +52,66 @@ public class SpawnableObject : MonoBehaviour
 
     private void addLeanComponents(GameObject prefab)
     {
-        prefab.AddComponent<LeanSelectableOutline>();
-        prefab.AddComponent<LeanSelectableByFinger>();
-        prefab.AddComponent<LeanDragTranslate>();
-        prefab.GetComponent<LeanDragTranslate>().Use.RequiredFingerCount = 1;
-        prefab.GetComponent<LeanDragTranslate>().Camera = GameObject.Find("AR Camera").GetComponent<Camera>();
-        prefab.GetComponent<LeanDragTranslate>().Sensitivity = 2;
-        prefab.AddComponent<LeanTwistRotateAxis>();
-        prefab.GetComponent<LeanTwistRotateAxis>().Sensitivity = 2;
-        prefab.AddComponent<saveYLocation>();
-        prefab.AddComponent<BoxCollider>();
-        prefab.AddComponent<Rigidbody>();
-        prefab.GetComponent<Rigidbody>().useGravity = false;
-        prefab.GetComponent<Rigidbody>().drag = float.MaxValue;
-        prefab.GetComponent<Rigidbody>().angularDrag = float.MaxValue;
-        prefab.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotationX;
-        prefab.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotationZ;
+        //prefab.AddComponent<LeanSelectable>();
+        
+        
 
+        var leanTranslate = prefab.GetComponent<LeanDragTranslate>();
+        var leanRotate = prefab.GetComponent<LeanTwistRotateAxis>();
+        var rigidBody = prefab.GetComponent<Rigidbody>();
 
-        var outline = prefab.AddComponent<Outline1>();
+        if (prefab.GetComponent<LeanSelectableOutline>() == null)
+        {
+            prefab.AddComponent<LeanSelectableOutline>();
+        }
+        if (prefab.GetComponent<LeanSelectableByFinger>() == null)
+        {
+            prefab.AddComponent<LeanSelectableByFinger>();
+        }
+        if (leanTranslate == null)
+        {
+            prefab.AddComponent<LeanDragTranslate>();
+            prefab.GetComponent<LeanDragTranslate>().Use.RequiredFingerCount = 1;
+            prefab.GetComponent<LeanDragTranslate>().Camera = GameObject.Find("AR Camera").GetComponent<Camera>();
+            prefab.GetComponent<LeanDragTranslate>().Sensitivity = 2;
+        }
+        if (leanRotate == null)
+        {
+            prefab.AddComponent<LeanTwistRotateAxis>();
+            prefab.GetComponent<LeanTwistRotateAxis>().Sensitivity = 2;
+        }
+        if (prefab.GetComponent<saveYLocation>() == null)
+        {
+            prefab.AddComponent<saveYLocation>();
+        }
+            
+        if (prefab.GetComponent<BoxCollider>() == null)
+        {
+            prefab.AddComponent<BoxCollider>();
+        }
+        if (rigidBody == null)
+        {
+            prefab.AddComponent<Rigidbody>();
+            prefab.GetComponent<Rigidbody>().useGravity = false;
+            prefab.GetComponent<Rigidbody>().drag = float.MaxValue;
+            prefab.GetComponent<Rigidbody>().angularDrag = float.MaxValue;
+            prefab.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotationX;
+            prefab.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotationZ;
+        }
+           
+        
 
-        outline.OutlineMode = Outline1.Mode.OutlineVisible;
-        outline.OutlineColor = Color.cyan;
-        outline.OutlineColor2 = Color.red;
-        outline.OutlineWidth = 5f;
-        outline.enabled = false;
+        if (prefab.GetComponent<Outline1>() == null)
+        {
+            var outline = prefab.AddComponent<Outline1>();
+
+            outline.OutlineMode = Outline1.Mode.OutlineVisible;
+            outline.OutlineColor = Color.cyan;
+            outline.OutlineColor2 = Color.red;
+            outline.OutlineWidth = 5f;
+            outline.enabled = false;
+        }
+        
 
         prefab.tag = "FurnitureModels";
 
