@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Lean.Common;
 using Lean.Touch;
 using UnityEngine;
@@ -16,6 +17,7 @@ public class SpawnableObject : MonoBehaviour
     public GameObject spawnablePrefab;
 
     [SerializeField] private Text debuggingValue;
+    public Material mat;
     GameObject spawnableObject;
     
     public bool picked;
@@ -39,17 +41,30 @@ public class SpawnableObject : MonoBehaviour
                 {
                     addLeanComponents(spawnablePrefab); // Add components to current prefab.
                     SpawnPrefab(hits[0].pose.position); // Instantiate an object in the ar scene
+                    setMaterial(mat);
                     picked = false;
                 }
             }
         }
     }
 
-    private void SpawnPrefab(Vector3 spawnPos)
+    private GameObject SpawnPrefab(Vector3 spawnPos)
     {
-        spawnableObject = Instantiate(spawnablePrefab, spawnPos, Quaternion.identity);
+       return spawnableObject = Instantiate(spawnablePrefab, spawnPos, Quaternion.identity);
     }
 
+    private void setMaterial(Material material)
+    {
+        Renderer rend = spawnableObject.GetComponent<Renderer>();
+        rend.enabled = true;
+        Material[] materials = new Material[rend.sharedMaterials.Length];
+        for (int i = 0; i < materials.Length; i++)
+        {
+            materials[i] = material;
+        }
+
+        rend.sharedMaterials = materials;
+    }
     private void addLeanComponents(GameObject prefab)
     {
         //prefab.AddComponent<LeanSelectable>();
@@ -59,6 +74,7 @@ public class SpawnableObject : MonoBehaviour
         var leanTranslate = prefab.GetComponent<LeanDragTranslate>();
         var leanRotate = prefab.GetComponent<LeanTwistRotateAxis>();
         var rigidBody = prefab.GetComponent<Rigidbody>();
+        VerticalPositionCalc positionCalc = prefab.GetComponent<VerticalPositionCalc>();
 
         if (prefab.GetComponent<LeanSelectableOutline>() == null)
         {
@@ -111,8 +127,13 @@ public class SpawnableObject : MonoBehaviour
             outline.OutlineWidth = 5f;
             outline.enabled = false;
         }
-        
 
+        if (positionCalc == null)
+        {
+            var comp = prefab.AddComponent<VerticalPositionCalc>();
+            comp.setRayCastManager(arRaycastManager);
+        }
+        
         prefab.tag = "FurnitureModels";
 
         debuggingValue.text = "components added";
