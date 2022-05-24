@@ -53,9 +53,9 @@ public class SpawnableObject : MonoBehaviour
        return spawnableObject = Instantiate(spawnablePrefab, spawnPos, Quaternion.identity);
     }
 
-    private void setMaterial(Material material)
+    private void setMaterial(GameObject gameObject,Material material)
     {
-        Renderer rend = spawnableObject.GetComponent<Renderer>();
+        Renderer rend = gameObject.GetComponent<Renderer>();
         rend.enabled = true;
         Material[] materials = new Material[rend.sharedMaterials.Length];
         for (int i = 0; i < materials.Length; i++)
