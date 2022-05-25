@@ -11,14 +11,6 @@ public class ObjectDeletion : MonoBehaviour
     List<ARRaycastHit> hits = new List<ARRaycastHit>();
     Camera arCamera;
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        arCamera = GameObject.Find("AR Camera").GetComponent<Camera>();  // get the ar camera 
-    }
-
-
     public GameObject panel;
     Transform parent;
     public void SwitchShowHide()
@@ -28,54 +20,36 @@ public class ObjectDeletion : MonoBehaviour
         panel.GetComponent<RectTransform>().localScale = new Vector2(0.001f, 0.001f);
         panel.transform.localPosition = new Vector3(0, 1, 0);
         panel.SetActive(true);
-        Debug.Log("PANEL ACTIVATE");
     }
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        arCamera = GameObject.Find("AR Camera").GetComponent<Camera>();  // get the ar camera 
+    }
+
     // Update is called once per frame
-
-
-    float ClickDuration = 1;
-    bool clicking = false;
-    float totalDownTime = 0;
     void Update()
     {
-
-        if (Input.GetMouseButtonDown(0))
+        if (Input.touchCount == 3)   // touch occured
         {
-            totalDownTime = 0;
-            clicking = true;
-        }
-        if (clicking && Input.GetMouseButton(0))
-        {
-            totalDownTime += Time.deltaTime;
-
-            if (totalDownTime >= ClickDuration)
+            if (arRaycastManager.Raycast(Input.GetTouch(0).position, hits)) // whether touch hits a detected plane plane
             {
-                Debug.Log("Long click detected");
-                if (arRaycastManager.Raycast(Input.GetTouch(0).position, hits)) // whether touch hits a detected plane plane
+                if (Input.GetTouch(0).phase == TouchPhase.Stationary) // If a hold occured
                 {
-                    if (Input.GetTouch(0).phase == TouchPhase.Stationary) // If a hold occured
-                    {
-                        RaycastHit hit;
-                        Ray ray = arCamera.ScreenPointToRay(Input.GetTouch(0).position);
+                    RaycastHit hit;
+                    Ray ray = arCamera.ScreenPointToRay(Input.GetTouch(0).position);
 
-                        if (Physics.Raycast(ray, out hit)) // cast a ray from ray to screen 
+                    if (Physics.Raycast(ray, out hit)) // cast a ray from ray to screen 
+                    {
+                        if (hit.collider.gameObject.tag.Equals("FurnitureModels")) // if the ray collides with an object whose tag "FurnitureModels"
                         {
-                            if (hit.collider.gameObject.tag.Equals("FurnitureModels")) // if the ray collides with an object whose tag "FurnitureModels"
-                            {                             
-                                parent = hit.collider.gameObject.transform;
-                                Debug.Log("Parent Found");
-                                Debug.Log(parent.gameObject.name);
-                                clicking = false;
-                                SwitchShowHide();
-                            }
+                            parent = hit.collider.gameObject.transform;
+                            SwitchShowHide();
                         }
                     }
                 }
             }
-        }
-        if (clicking && Input.GetMouseButtonUp(0))
-        {
-            panel.SetActive(false);
         }
     }
 }
