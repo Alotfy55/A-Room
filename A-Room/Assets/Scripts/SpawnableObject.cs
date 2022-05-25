@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,12 +13,15 @@ public class SpawnableObject : MonoBehaviour
 {
     [SerializeField] ARRaycastManager arRaycastManager;
 
-    List<ARRaycastHit> hits = new List<ARRaycastHit>();
+    
 
     public GameObject spawnablePrefab;
+    public GameObject placementIndicator;
 
     [SerializeField] private Text debuggingValue;
     public Material mat;
+    private bool placementPoseIsValid = false;
+    private Pose placementPose;
     GameObject spawnableObject;
     
     public bool picked;
@@ -27,30 +31,60 @@ public class SpawnableObject : MonoBehaviour
     {
         picked = false;
         spawnableObject = null;
-        
+    }
+
+    private void UpdatePlacementIndicator()
+    {
+        if (placementPoseIsValid && picked)
+        {
+            //placementIndicator.transform.GetChild(0).transform.localScale = spawnablePrefab.transform.localScale;
+            placementIndicator.SetActive(true);
+            placementIndicator.transform.SetPositionAndRotation(placementPose.position, placementPose.rotation);
+        }
+        else
+        {
+            placementIndicator.SetActive(false);
+        }
+    }
+
+    private void UpdatePlacementPose()
+    {
+        var screenCenter = Camera.current.ViewportToScreenPoint(new Vector3(0.5f,0.5f));
+        List<ARRaycastHit> hits = new List<ARRaycastHit>();
+        arRaycastManager.Raycast(screenCenter, hits, TrackableType.PlaneWithinPolygon); // whether touch hits a detected plane plane
+
+        placementPoseIsValid = hits.Count > 0;
+
+        if (placementPoseIsValid)
+        {
+            placementPose = hits[0].pose;
+
+            var cameraForward = Camera.current.transform.forward;
+            var cameraBearing = new Vector3(cameraForward.x, 0, cameraForward.z).normalized;
+            placementPose.rotation = Quaternion.LookRotation(cameraBearing);  
+        }
+        if (Input.touchCount > 0 && placementPoseIsValid && picked) // touch occured
+        {
+            if (Input.GetTouch(0).phase == TouchPhase.Began) // check for a touch and no object have been instantiate before 
+            {
+                addLeanComponents(spawnablePrefab); // Add components to current prefab.
+                SpawnPrefab(); // Instantiate an object in the ar scene
+                                                    //setMaterial(mat);
+                picked = false;
+            }
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.touchCount > 0) // touch occured
-        {
-            if (arRaycastManager.Raycast(Input.GetTouch(0).position, hits, TrackableType.PlaneWithinPolygon) && picked) // whether touch hits a detected plane plane
-            {
-                if (Input.GetTouch(0).phase == TouchPhase.Began) // check for a touch and no object have been instantiate before 
-                {
-                    addLeanComponents(spawnablePrefab); // Add components to current prefab.
-                    SpawnPrefab(hits[0].pose.position); // Instantiate an object in the ar scene
-                    //setMaterial(mat);
-                    picked = false;
-                }
-            }
-        }
+        UpdatePlacementPose();
+        UpdatePlacementIndicator();
     }
 
-    private GameObject SpawnPrefab(Vector3 spawnPos)
+    private GameObject SpawnPrefab()
     {
-       return spawnableObject = Instantiate(spawnablePrefab, spawnPos, Quaternion.identity);
+       return spawnableObject = Instantiate(spawnablePrefab, placementPose.position, placementPose.rotation);
     }
 
     private void setMaterial(GameObject gameObject,Material material)
