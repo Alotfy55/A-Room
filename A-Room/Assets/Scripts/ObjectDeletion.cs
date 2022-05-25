@@ -17,9 +17,10 @@ public class ObjectDeletion : MonoBehaviour
     {
         //parent = this.gameObject.GetComponent<RectTransform>();
         panel.transform.SetParent(parent.transform, true);
-        panel.GetComponent<RectTransform>().localScale = new Vector2(0.001f, 0.001f);
+        //panel.GetComponent<RectTransform>().localScale = new Vector2(0.001f, 0.001f);
         panel.transform.localPosition = new Vector3(0, 1, 0);
         panel.SetActive(true);
+        panel.GetComponent<RectTransform>().SetAsLastSibling();
     }
 
     // Start is called before the first frame update
