@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class Delete_Model : MonoBehaviour
 {
-    Transform obj;
 
+    Transform model;
     public void Delete_GameObj()
     {
-        obj = this.transform.parent;
-        //Debug.Log("Destroy Parent and child");
-        Destroy(obj.transform.parent.gameObject);
+        model = FindObjectOfType<ObjectDeletion>().getParent();
+        Destroy(model.gameObject);  
         this.transform.parent.gameObject.SetActive(false);
-
     }
 }

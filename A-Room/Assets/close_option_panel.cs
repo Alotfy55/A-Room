@@ -2,13 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Open_Info_Panel : MonoBehaviour
+public class close_option_panel : MonoBehaviour
 {
-    public GameObject info_panel;
-
-    public void Open_panel()
+    // Start is called before the first frame update
+    public void close()
     {
         this.transform.parent.gameObject.SetActive(false);
-        info_panel.SetActive(true);
     }
 }

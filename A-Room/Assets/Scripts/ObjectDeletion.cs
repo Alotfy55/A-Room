@@ -13,13 +13,20 @@ public class ObjectDeletion : MonoBehaviour
 
     public GameObject panel;
     Transform parent;
+    
     public void SwitchShowHide()
     {
         //parent = this.gameObject.GetComponent<RectTransform>();
-        panel.transform.SetParent(parent.transform, true);
-        panel.GetComponent<RectTransform>().localScale = new Vector2(0.001f, 0.001f);
-        panel.transform.localPosition = new Vector3(0, 1, 0);
+        //panel.transform.SetParent( canvas.transform, true);
+        //panel.GetComponent<RectTransform>().localScale = new Vector2(0.001f, 0.001f);
+        //panel.transform.localPosition = new Vector3(0, 1, 0);
         panel.SetActive(true);
+        panel.GetComponent<RectTransform>().SetAsLastSibling();
+    }
+
+    public Transform getParent()
+    {
+        return parent;
     }
 
     // Start is called before the first frame update
