@@ -33,6 +33,9 @@ public class Change_Model_color : MonoBehaviour
         {
             ModelRenderer.material.SetColor("_Color", Color.white);
         }
-        
+        else if (color_number == 5) // white
+        {
+            ModelRenderer.material.SetColor("_Color", Color.yellow);
+        }
     }
 }
