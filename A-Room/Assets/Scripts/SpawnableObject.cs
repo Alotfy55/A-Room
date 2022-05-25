@@ -41,7 +41,7 @@ public class SpawnableObject : MonoBehaviour
                 {
                     addLeanComponents(spawnablePrefab); // Add components to current prefab.
                     SpawnPrefab(hits[0].pose.position); // Instantiate an object in the ar scene
-                    setMaterial(mat);
+                    //setMaterial(mat);
                     picked = false;
                 }
             }
