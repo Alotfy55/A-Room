@@ -38,7 +38,7 @@ public class ObjectDeletion : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.touchCount == 3)   // touch occured
+        if (Input.touchCount == 2)   // touch occured
         {
             if (arRaycastManager.Raycast(Input.GetTouch(0).position, hits)) // whether touch hits a detected plane plane
             {
