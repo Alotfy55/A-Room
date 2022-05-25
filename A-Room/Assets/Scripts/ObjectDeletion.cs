@@ -28,6 +28,7 @@ public class ObjectDeletion : MonoBehaviour
         panel.GetComponent<RectTransform>().localScale = new Vector2(0.001f, 0.001f);
         panel.transform.localPosition = new Vector3(0, 1, 0);
         panel.SetActive(true);
+        Debug.Log("PANEL ACTIVATE");
     }
     // Update is called once per frame
 
@@ -49,6 +50,7 @@ public class ObjectDeletion : MonoBehaviour
 
             if (totalDownTime >= ClickDuration)
             {
+                Debug.Log("Long click detected");
                 if (arRaycastManager.Raycast(Input.GetTouch(0).position, hits)) // whether touch hits a detected plane plane
                 {
                     if (Input.GetTouch(0).phase == TouchPhase.Stationary) // If a hold occured
@@ -59,9 +61,10 @@ public class ObjectDeletion : MonoBehaviour
                         if (Physics.Raycast(ray, out hit)) // cast a ray from ray to screen 
                         {
                             if (hit.collider.gameObject.tag.Equals("FurnitureModels")) // if the ray collides with an object whose tag "FurnitureModels"
-                            {
-                                //Debug.Log("Long click");
+                            {                             
                                 parent = hit.collider.gameObject.transform;
+                                Debug.Log("Parent Found");
+                                Debug.Log(parent.gameObject.name);
                                 clicking = false;
                                 SwitchShowHide();
                             }
