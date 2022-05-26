@@ -8,10 +8,12 @@ public class sofa_loader : MonoBehaviour
     public GameObject b;
     public GameObject spawner;
     public GameObject slider;
-
+    public Button cancel;
     public void Create()
     {
         //GameObject a = (GameObject)Instantiate(b);
+        cancel.gameObject.SetActive(true);
+        spawner.GetComponent<SpawnableObject>().scale = b.GetComponent<Renderer>().bounds.size;
         spawner.GetComponent<SpawnableObject>().spawnablePrefab = b;
         spawner.GetComponent<SpawnableObject>().picked = true;
         slider.GetComponent<Button>().onClick.Invoke();

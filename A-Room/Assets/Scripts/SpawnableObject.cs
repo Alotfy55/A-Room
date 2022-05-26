@@ -8,6 +8,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
+using UnityEngine.EventSystems;
 
 public class SpawnableObject : MonoBehaviour
 {
@@ -23,7 +24,11 @@ public class SpawnableObject : MonoBehaviour
     private bool placementPoseIsValid = false;
     private Pose placementPose;
     GameObject spawnableObject;
-    
+    public Vector3 scale;
+
+    public Button cancel;
+
+    public Text debuger;
     public bool picked;
 
     // Start is called before the first frame update
@@ -37,7 +42,8 @@ public class SpawnableObject : MonoBehaviour
     {
         if (placementPoseIsValid && picked)
         {
-            //placementIndicator.transform.GetChild(0).transform.localScale = spawnablePrefab.transform.localScale;
+            //newScale(placementIndicator.transform.GetChild(0).gameObject,scale);
+            //placementIndicator.transform.GetChild(0).transform.localScale = scale;
             placementIndicator.SetActive(true);
             placementIndicator.transform.SetPositionAndRotation(placementPose.position, placementPose.rotation);
         }
@@ -65,12 +71,23 @@ public class SpawnableObject : MonoBehaviour
         }
         if (Input.touchCount > 0 && placementPoseIsValid && picked) // touch occured
         {
-            if (Input.GetTouch(0).phase == TouchPhase.Began) // check for a touch and no object have been instantiate before 
+            foreach (Touch touch in Input.touches)
+            {
+                if (EventSystem.current.IsPointerOverGameObject(touch.fingerId))
+                {
+                    return;
+                }
+            }
+            if (Input.GetTouch(0).phase == TouchPhase.Began && spawnablePrefab) // check for a touch and no object have been instantiate before 
             {
                 addLeanComponents(spawnablePrefab); // Add components to current prefab.
                 SpawnPrefab(); // Instantiate an object in the ar scene
-                                                    //setMaterial(mat);
+                cancel.gameObject.SetActive(false);
+                //setMaterial(mat);
                 picked = false;
+
+                Vector3 s1 = spawnablePrefab.GetComponent<Renderer>().bounds.size;
+                debuger.text = s1.ToString();
             }
         }
     }
@@ -87,6 +104,12 @@ public class SpawnableObject : MonoBehaviour
        return spawnableObject = Instantiate(spawnablePrefab, placementPose.position, placementPose.rotation);
     }
 
+    public void disselect() 
+    {
+        spawnablePrefab = null;
+        picked = false;
+        cancel.gameObject.SetActive(false);
+    }
     private void setMaterial(GameObject gameObject,Material material)
     {
         Renderer rend = gameObject.GetComponent<Renderer>();
@@ -99,7 +122,22 @@ public class SpawnableObject : MonoBehaviour
 
         rend.sharedMaterials = materials;
     }
-    private void addLeanComponents(GameObject prefab)
+
+    public void newScale(GameObject theGameObject, Vector3 newSize)
+    {
+
+        Vector3 size = theGameObject.GetComponent<Renderer>().bounds.size;
+
+        Vector3 rescale = theGameObject.transform.localScale;
+
+        rescale.x = newSize.x * rescale.x / size.x;
+        //rescale.y = newSize.y * rescale.y / size.y;
+        rescale.z = newSize.z * rescale.z / size.z;
+
+        theGameObject.transform.localScale = rescale;
+
+    }
+    public void addLeanComponents(GameObject prefab)
     {
         //prefab.AddComponent<LeanSelectable>();
         
