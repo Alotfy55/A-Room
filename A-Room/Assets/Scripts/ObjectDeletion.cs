@@ -19,7 +19,7 @@ public class ObjectDeletion : MonoBehaviour
         //parent = this.gameObject.GetComponent<RectTransform>();
         //panel.transform.SetParent( canvas.transform, true);
         panel.GetComponent<RectTransform>().localScale = new Vector2(0.001f, 0.001f);
-        panel.transform.position = new Vector3(parent.position.x, parent.localScale.y + 5, parent.position.z);
+        update_option_panel_pos();
         panel.SetActive(true);
         panel.GetComponent<RectTransform>().SetAsLastSibling();
     }
@@ -41,7 +41,10 @@ public class ObjectDeletion : MonoBehaviour
     void Update()
     {
         if (parent != null)
-            panel.transform.position = new Vector3(parent.position.x, parent.localScale.y + 5, parent.position.z);
+        {
+            update_option_panel_pos();
+        }
+
         if (Input.touchCount == 2)   // touch occured
         {
             if (arRaycastManager.Raycast(Input.GetTouch(0).position, hits)) // whether touch hits a detected plane plane
@@ -62,6 +65,12 @@ public class ObjectDeletion : MonoBehaviour
                 }
             }
         }
+
+    }
+    void update_option_panel_pos()
+    {
+        Vector3 screenPos = Camera.main.WorldToScreenPoint(parent.position);
+        panel.transform.position = new Vector2(screenPos.x, screenPos.y);
 
     }
 }
