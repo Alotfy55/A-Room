@@ -11,17 +11,24 @@ public class ObjectDeletion : MonoBehaviour
     List<ARRaycastHit> hits = new List<ARRaycastHit>();
     Camera arCamera;
 
-    public GameObject panel;
+    public GameObject panels_canvas;
+
     Transform parent;
 
     public void SwitchShowHide()
     {
+
+        panels_canvas.transform.parent = parent;
+        panels_canvas.transform.GetChild(0).gameObject.SetActive(true);
+        //panels_canvas.transform.GetChild(0).GetComponent<RectTransform>().localScale = new Vector2(0.01f, 0.01f);
+
+        
         //parent = this.gameObject.GetComponent<RectTransform>();
         //panel.transform.SetParent( canvas.transform, true);
 
-        panel.GetComponent<RectTransform>().localScale = new Vector2(0.01f, 0.01f);
-        update_option_panel_pos();
-        panel.SetActive(true);
+        //panel.GetComponent<RectTransform>().localScale = new Vector2(0.01f, 0.01f);
+        //update_option_panel_pos();
+        //panel.SetActive(true);
 
 
         //panel.GetComponent<RectTransform>().localScale = new Vector2(0.001f, 0.001f);
@@ -31,6 +38,7 @@ public class ObjectDeletion : MonoBehaviour
         //panel.gameObject.SetActive(true);
 
         //panel.GetComponent<RectTransform>().SetAsLastSibling();
+
     }
 
     public Transform getParent()
@@ -49,10 +57,10 @@ public class ObjectDeletion : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (parent != null)
-        {
-            update_option_panel_pos();
-        }
+        //if (parent != null)
+        //{
+        //    update_option_panel_pos();
+        //}
 
         if (Input.touchCount == 2)   // touch occured
         {
@@ -76,7 +84,7 @@ public class ObjectDeletion : MonoBehaviour
         }
 
     }
-    void update_option_panel_pos()
+    /*void update_option_panel_pos()
     {
 
         Vector2 screenPos = Camera.main.WorldToScreenPoint(parent.gameObject.GetComponent<RectTransform>().position);
@@ -88,5 +96,10 @@ public class ObjectDeletion : MonoBehaviour
         //Vector3 screenPos = Camera.main.WorldToScreenPoint(parent.position);
         //panel.transform.parent.GetComponent<RectTransform>().anchoredPosition = new Vector3(screenPos.x,screenPos.y,0);
         //panel.GetComponent<RectTransform>().SetAsLastSibling();
-    }
+
+
+
+    }*/
 }
+
+
