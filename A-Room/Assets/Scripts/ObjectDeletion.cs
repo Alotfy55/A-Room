@@ -69,8 +69,8 @@ public class ObjectDeletion : MonoBehaviour
     }
     void update_option_panel_pos()
     {
-        Vector2 screenPos = Camera.main.WorldToScreenPoint(parent.position);
-        panel.GetComponent<RectTransform>().anchoredPosition = screenPos;
-        panel.GetComponent<RectTransform>().SetAsLastSibling();
+        Vector3 screenPos = Camera.main.WorldToScreenPoint(parent.position);
+        panel.GetComponent<RectTransform>().anchoredPosition = new Vector3(screenPos.x,screenPos.y,0);
+        //panel.GetComponent<RectTransform>().SetAsLastSibling();
     }
 }
