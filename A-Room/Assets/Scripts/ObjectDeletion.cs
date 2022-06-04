@@ -18,10 +18,10 @@ public class ObjectDeletion : MonoBehaviour
     {
         //parent = this.gameObject.GetComponent<RectTransform>();
         //panel.transform.SetParent( canvas.transform, true);
-        panel.GetComponent<RectTransform>().localScale = new Vector2(0.001f, 0.001f);
+        panel.GetComponent<RectTransform>().localScale = new Vector2(0.01f, 0.01f);
         update_option_panel_pos();
         panel.SetActive(true);
-        panel.GetComponent<RectTransform>().SetAsLastSibling();
+        //panel.GetComponent<RectTransform>().SetAsLastSibling();
     }
 
     public Transform getParent()
@@ -69,8 +69,10 @@ public class ObjectDeletion : MonoBehaviour
     }
     void update_option_panel_pos()
     {
-        Vector3 screenPos = Camera.main.WorldToScreenPoint(parent.position);
-        panel.GetComponent<RectTransform>().anchoredPosition = new Vector3(screenPos.x,screenPos.y,0);
+        Vector2 screenPos = Camera.main.WorldToScreenPoint(parent.position);
+        float scaleFactor = GameObject.Find("Canvas").GetComponent<Canvas>().scaleFactor;
+        screenPos = new Vector2(screenPos.x / scaleFactor, screenPos.y / scaleFactor);
+        panel.GetComponent<RectTransform>().anchoredPosition = screenPos;
         //panel.GetComponent<RectTransform>().SetAsLastSibling();
     }
 }
