@@ -14,10 +14,11 @@ public class SpawnableObject : MonoBehaviour
 {
     [SerializeField] ARRaycastManager arRaycastManager;
 
-    
 
     public GameObject spawnablePrefab;
     public GameObject placementIndicator;
+
+    public GameObject placementIndicatorObj;
 
     [SerializeField] private Text debuggingValue;
     public Material mat;
@@ -42,14 +43,32 @@ public class SpawnableObject : MonoBehaviour
     {
         if (placementPoseIsValid && picked)
         {
+            if (!placementIndicatorObj) 
+            {
+                placementIndicatorObj = Instantiate(placementIndicator, placementPose.position, placementPose.rotation);
+                
+                foreach (var material in placementIndicatorObj.GetComponent<Renderer>().materials)
+                {
+                    material.SetOverrideTag("RenderType", "Transparent");
+                    material.SetFloat("_SrcBlend", (float)UnityEngine.Rendering.BlendMode.SrcAlpha);
+                    material.SetFloat("_DstBlend", (float)UnityEngine.Rendering.BlendMode.OneMinusSrcAlpha);
+                    material.SetFloat("_ZWrite", 0.0f);
+                    material.DisableKeyword("_ALPHATEST_ON");
+                    material.EnableKeyword("_ALPHABLEND_ON");
+                    material.DisableKeyword("_ALPHAPREMULTIPLY_ON");
+                    material.renderQueue = (int)UnityEngine.Rendering.RenderQueue.Transparent;
+                    material.color = new Color(material.color.r, material.color.g, material.color.b, 0.9f);
+                }
+            }
             //newScale(placementIndicator.transform.GetChild(0).gameObject,scale);
             //placementIndicator.transform.GetChild(0).transform.localScale = scale;
-            placementIndicator.SetActive(true);
-            placementIndicator.transform.SetPositionAndRotation(placementPose.position, placementPose.rotation);
+            //placementIndicatorObj.SetActive(true);
+            placementIndicatorObj.transform.SetPositionAndRotation(placementPose.position, placementPose.rotation);
         }
         else
         {
-            placementIndicator.SetActive(false);
+            Destroy(placementIndicatorObj);
+            //placementIndicator.SetActive(false);
         }
     }
 
@@ -88,6 +107,7 @@ public class SpawnableObject : MonoBehaviour
 
                 Vector3 s1 = spawnablePrefab.GetComponent<Renderer>().bounds.size;
                 debuger.text = s1.ToString();
+
             }
         }
     }
@@ -130,9 +150,9 @@ public class SpawnableObject : MonoBehaviour
 
         Vector3 rescale = theGameObject.transform.localScale;
 
-        rescale.x = newSize.x * rescale.x / size.x;
-        //rescale.y = newSize.y * rescale.y / size.y;
-        rescale.z = newSize.z * rescale.z / size.z;
+        rescale.x = rescale.x * newSize.x / size.x;
+        rescale.y = 0.001f;
+        rescale.z = rescale.z* newSize.z / size.z;
 
         theGameObject.transform.localScale = rescale;
 
