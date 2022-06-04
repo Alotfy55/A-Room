@@ -69,7 +69,7 @@ public class ObjectDeletion : MonoBehaviour
     }
     void update_option_panel_pos()
     {
-        Vector2 screenPos = Camera.main.WorldToScreenPoint(parent.position);
+        Vector2 screenPos = Camera.main.WorldToScreenPoint(parent.gameObject.GetComponent<RectTransform>().position);
         float scaleFactor = GameObject.Find("Canvas").GetComponent<Canvas>().scaleFactor;
         screenPos = new Vector2(screenPos.x / scaleFactor, screenPos.y / scaleFactor);
         panel.GetComponent<RectTransform>().anchoredPosition = screenPos;
