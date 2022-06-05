@@ -45,19 +45,22 @@ public class SpawnableObject : MonoBehaviour
         {
             if (!placementIndicatorObj) 
             {
-                placementIndicatorObj = Instantiate(placementIndicator, placementPose.position, placementPose.rotation);
                 
-                foreach (var material in placementIndicatorObj.GetComponent<Renderer>().materials)
+                placementIndicatorObj = Instantiate(placementIndicator, placementPose.position, placementPose.rotation);
+                Material []material = placementIndicatorObj.gameObject.GetComponent<Renderer>().materials;
+                for(int i = 0; i < material.Length; i++)
                 {
-                    material.SetOverrideTag("RenderType", "Transparent");
-                    material.SetFloat("_SrcBlend", (float)UnityEngine.Rendering.BlendMode.SrcAlpha);
-                    material.SetFloat("_DstBlend", (float)UnityEngine.Rendering.BlendMode.OneMinusSrcAlpha);
-                    material.SetFloat("_ZWrite", 0.0f);
-                    material.DisableKeyword("_ALPHATEST_ON");
-                    material.EnableKeyword("_ALPHABLEND_ON");
-                    material.DisableKeyword("_ALPHAPREMULTIPLY_ON");
-                    material.renderQueue = (int)UnityEngine.Rendering.RenderQueue.Transparent;
-                    material.color = new Color(material.color.r, material.color.g, material.color.b, 0.9f);
+                    
+                    material[i].SetFloat("_Mode", 2);
+                    material[i].SetInt("_SrcBlend", (int)UnityEngine.Rendering.BlendMode.SrcAlpha);
+                    material[i].SetInt("_DstBlend", (int)UnityEngine.Rendering.BlendMode.OneMinusSrcAlpha);
+                    material[i].SetInt("_ZWrite", 0);
+                    material[i].DisableKeyword("_ALPHATEST_ON");
+                    material[i].EnableKeyword("_ALPHABLEND_ON");
+                    material[i].DisableKeyword("_ALPHAPREMULTIPLY_ON");
+                    material[i].renderQueue = 3000;
+
+                    material[i].color = new Color(material[i].color.r, material[i].color.g, material[i].color.b, 0.4f);
                 }
             }
             //newScale(placementIndicator.transform.GetChild(0).gameObject,scale);
