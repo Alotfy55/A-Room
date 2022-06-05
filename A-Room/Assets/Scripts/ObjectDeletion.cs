@@ -12,9 +12,7 @@ public class ObjectDeletion : MonoBehaviour
     Camera arCamera;
 
     public GameObject panel;
-
     Transform parent;
-    public Canvas canvas; 
 
     public void SwitchShowHide()
     {
@@ -23,31 +21,42 @@ public class ObjectDeletion : MonoBehaviour
         //panels_canvas.transform.GetChild(0).gameObject.SetActive(true);
         //panels_canvas.transform.GetChild(0).GetComponent<RectTransform>().localScale = new Vector2(0.01f, 0.01f);
 
-        
+
         //parent = this.gameObject.GetComponent<RectTransform>();
         //panel.transform.SetParent( canvas.transform, true);
         //panel.GetComponent<RectTransform>().localScale = new Vector2(0.01f, 0.01f);
         //update_option_panel_pos();
         //panel.SetActive(true);
-        //panel.GetComponent<RectTransform>().SetAsLastSibling();*/
-        //parent = this.gameObject.GetComponent<RectTransform>();
+        /*
 
-        panel.transform.SetParent(parent.transform, false);
+             panel.transform.SetParent(parent.transform, false);
+             panel.GetComponent<RectTransform>().localScale = new Vector2(0.001f, 0.001f);
+
+             RectTransform CanvasRect = canvas.GetComponent<RectTransform>();
+
+
+             Vector2 ViewportPosition = Camera.main.WorldToViewportPoint(parent.transform.position);
+             Vector2 WorldObject_ScreenPosition = new Vector2(
+             ((ViewportPosition.x * CanvasRect.sizeDelta.x) - (CanvasRect.sizeDelta.x * 0.5f)),
+             ((ViewportPosition.y * CanvasRect.sizeDelta.y) - (CanvasRect.sizeDelta.y * 0.5f)));
+
+             panel.GetComponent<RectTransform>().anchoredPosition = WorldObject_ScreenPosition;
+             //panel.transform.localPosition = new Vector3(0, 1, 0);
+             panel.SetActive(true);
+             panel.GetComponent<RectTransform>().SetAsLastSibling();
+        */
+
+        /////////////yaraaabb/////////////////////
+        Update_pos();
         panel.GetComponent<RectTransform>().localScale = new Vector2(0.001f, 0.001f);
-
-        RectTransform CanvasRect = canvas.GetComponent<RectTransform>();
-
-       
-        Vector2 ViewportPosition = Camera.main.WorldToViewportPoint(parent.transform.position);
-        Vector2 WorldObject_ScreenPosition = new Vector2(
-        ((ViewportPosition.x * CanvasRect.sizeDelta.x) - (CanvasRect.sizeDelta.x * 0.5f)),
-        ((ViewportPosition.y * CanvasRect.sizeDelta.y) - (CanvasRect.sizeDelta.y * 0.5f)));
-
-        panel.GetComponent<RectTransform>().anchoredPosition = WorldObject_ScreenPosition;
-        //panel.transform.localPosition = new Vector3(0, 1, 0);
-        panel.SetActive(true);
+        panel.SetActive(true);  
         panel.GetComponent<RectTransform>().SetAsLastSibling();
     }
+    void Update_pos()
+    {
+        panel.transform.position = Camera.main.WorldToScreenPoint(parent.transform.position) + new Vector3(0, 0, 0);
+    }
+
 
     public Transform getParent()
     {
@@ -65,6 +74,8 @@ public class ObjectDeletion : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (parent != null)
+            Update_pos();
         if (Input.touchCount == 2)   // touch occured
         {
             if (arRaycastManager.Raycast(Input.GetTouch(0).position, hits)) // whether touch hits a detected plane plane
