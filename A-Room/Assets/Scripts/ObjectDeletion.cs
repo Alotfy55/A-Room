@@ -13,7 +13,7 @@ public class ObjectDeletion : MonoBehaviour
 
     public GameObject panel;
     Transform parent;
-    RectTransform parentRect;
+    public RectTransform parentRect;
 
     public void SwitchShowHide()
     {
