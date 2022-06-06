@@ -22,6 +22,7 @@ public class SpawnableObject : MonoBehaviour
 
     [SerializeField] private Text debuggingValue;
     public Material mat;
+    public Material TransMat;
     private bool placementPoseIsValid = false;
     private Pose placementPose;
     GameObject spawnableObject;
@@ -46,19 +47,7 @@ public class SpawnableObject : MonoBehaviour
             if (!placementIndicatorObj) 
             {
                 placementIndicatorObj = Instantiate(placementIndicator, placementPose.position, placementPose.rotation);
-                
-                foreach (var material in placementIndicatorObj.GetComponent<Renderer>().materials)
-                {
-                    material.SetOverrideTag("RenderType", "Transparent");
-                    material.SetFloat("_SrcBlend", (float)UnityEngine.Rendering.BlendMode.SrcAlpha);
-                    material.SetFloat("_DstBlend", (float)UnityEngine.Rendering.BlendMode.OneMinusSrcAlpha);
-                    material.SetFloat("_ZWrite", 0.0f);
-                    material.DisableKeyword("_ALPHATEST_ON");
-                    material.EnableKeyword("_ALPHABLEND_ON");
-                    material.DisableKeyword("_ALPHAPREMULTIPLY_ON");
-                    material.renderQueue = (int)UnityEngine.Rendering.RenderQueue.Transparent;
-                    material.color = new Color(material.color.r, material.color.g, material.color.b, 0.9f);
-                }
+                setMaterial(placementIndicatorObj, TransMat);
             }
             //newScale(placementIndicator.transform.GetChild(0).gameObject,scale);
             //placementIndicator.transform.GetChild(0).transform.localScale = scale;
