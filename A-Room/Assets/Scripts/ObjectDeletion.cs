@@ -13,6 +13,7 @@ public class ObjectDeletion : MonoBehaviour
 
     public GameObject panel;
     Transform parent;
+    RectTransform parentRect;
 
     public void SwitchShowHide()
     {
@@ -48,13 +49,15 @@ public class ObjectDeletion : MonoBehaviour
 
         /////////////yaraaabb/////////////////////
         Update_pos();
-        panel.GetComponent<RectTransform>().localScale = new Vector2(0.001f, 0.001f);
+        panel.GetComponent<RectTransform>().localScale = new Vector2(0.1f, 0.1f);
         panel.SetActive(true);  
         panel.GetComponent<RectTransform>().SetAsLastSibling();
     }
     void Update_pos()
     {
-        panel.transform.position = Camera.main.WorldToScreenPoint(parent.transform.position) + new Vector3(0, 0, 0);
+        Vector2 vec = (Vector2)Camera.main.WorldToScreenPoint(parent.transform.position);
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(parentRect, vec, null, out Vector2 localPoint);
+        panel.transform.position = localPoint;
     }
 
 
