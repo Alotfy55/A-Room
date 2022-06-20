@@ -12,6 +12,8 @@ public class swipe : MonoBehaviour, IDragHandler, IEndDragHandler
     private int currentPage = 1;
     RectTransform r;
     private double differenceY=0;
+    private bool moveUp;
+    private int moving=0;
 
     // Start is called before the first frame update
     void Start()
@@ -22,60 +24,71 @@ public class swipe : MonoBehaviour, IDragHandler, IEndDragHandler
     }
     public void OnDrag(PointerEventData data)
     {
+
         float differenceX = data.pressPosition.x - data.position.x;
-          differenceY = data.pressPosition.y - data.position.y;
-        transform.position = panelLocation - new Vector3(differenceX,0, 0);
-        r.sizeDelta = new Vector2(r.sizeDelta.x, (float)(r.sizeDelta.y - differenceY*0.2));  
-       
-            //transform.position = panelLocation - new Vector3(0, differenceY, 0);
-       
+        differenceY = data.pressPosition.y - data.position.y;
+        if (Mathf.Abs((float)(differenceY)) > Mathf.Abs((float)(differenceX))&& moving!=2)
+        {
+            r.sizeDelta = new Vector2(r.sizeDelta.x, (float)(r.sizeDelta.y - differenceY * 0.02));
+            moveUp = true;
+            moving = 1;
+        }
+        else if (Mathf.Abs((float)(differenceX)) > Mathf.Abs((float)(differenceY))&& moving!=1) {
+            transform.position = panelLocation - new Vector3(differenceX, 0, 0);
+            moveUp = false;
+            moving = 2;
+        }
+        
     }
     public void OnEndDrag(PointerEventData data)
     {
         float percentageX = (data.pressPosition.x - data.position.x) / Screen.width;
-        
-            if ( r.sizeDelta.y <= 2500 && r.sizeDelta.y > 1700)
+        if (moveUp)
+        {
+            if (r.sizeDelta.y <= 2500 && r.sizeDelta.y > 1700)
             {
                 r.sizeDelta = new Vector2(r.sizeDelta.x, (float)(r.sizeDelta.y - differenceY * 0.2));
 
             }
-            else if(r.sizeDelta.y <= 2500 && r.sizeDelta.y < 1700)
+            else if ( r.sizeDelta.y <= 1700 && r.sizeDelta.y > 1200)
             {
-                //r.sizeDelta = new Vector2(r.sizeDelta.x, 1700);
-            StartCoroutine(SmoothMove(r.sizeDelta, 1700, easing));
-        }
-            else if(r.sizeDelta.y > 2500)
-            {
-            //r.sizeDelta = new Vector2(r.sizeDelta.x, 2500);
-            StartCoroutine(SmoothMove(r.sizeDelta, 2500, easing));
-        }
-        
-            
-            //else if(percentageY<0 && transform.position.y > 0)
-            //{
-            //    r.sizeDelta += new Vector2(0, -(float)(r.sizeDelta.y - differenceY * 0.2));
-            
-        if (Mathf.Abs(percentageX) >= percentThreshold) {
-            Vector3 newLocation = panelLocation;
-            if (percentageX > 0 && currentPage < totalPages)
-            {
-                currentPage++;
-                newLocation += new Vector3(-Screen.width, 0, 0);
-            }
-            else if (percentageX < 0 && currentPage > 1)
-            {
-                currentPage--;
-                newLocation += new Vector3(Screen.width, 0, 0);
-            }
-            StartCoroutine(SmoothMoveX(transform.position, newLocation, easing));
-            panelLocation = newLocation;
-        }
-        else
-        {
-            StartCoroutine(SmoothMoveX(transform.position, panelLocation, easing));
-            //StartCoroutine(SmoothMove(r.sizeDelta, 1700, easing));
 
+                StartCoroutine(SmoothMove(r.sizeDelta, 1700, easing));
+            }
+            else if (r.sizeDelta.y >= 2500)
+            {
+
+                StartCoroutine(SmoothMove(r.sizeDelta, 2500, easing));
+            }
+            else if(r.sizeDelta.y < 1200)
+            {
+                StartCoroutine(SmoothMove(r.sizeDelta, 0, easing));
+            }
         }
+        if (moveUp == false)
+        {
+            if (Mathf.Abs(percentageX) >= percentThreshold)
+            {
+                Vector3 newLocation = panelLocation;
+                if (percentageX > 0 && currentPage < totalPages)
+                {
+                    currentPage++;
+                    newLocation += new Vector3(-Screen.width, 0, 0);
+                }
+                else if (percentageX < 0 && currentPage > 1)
+                {
+                    currentPage--;
+                    newLocation += new Vector3(Screen.width, 0, 0);
+                }
+                StartCoroutine(SmoothMoveX(transform.position, newLocation, easing));
+                panelLocation = newLocation;
+            }
+            else
+            {
+                StartCoroutine(SmoothMoveX(transform.position, panelLocation, easing));
+            }
+        }
+        moving = 0;
     }
     
     IEnumerator SmoothMoveX(Vector3 startpos, Vector3 endpos, float seconds)
