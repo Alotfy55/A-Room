@@ -8,7 +8,9 @@ public class Delete_Model : MonoBehaviour
     Transform model;
     public void Delete_GameObj()
     {
-        model = FindObjectOfType<ObjectDeletion>().getParent();
+        var obj = FindObjectOfType<ObjectDeletion>();
+        obj.numOfFurniture--;
+        model = obj.getParent();
         Destroy(model.gameObject);  
         this.transform.parent.gameObject.SetActive(false);
     }
