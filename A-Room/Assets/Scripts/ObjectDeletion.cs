@@ -52,17 +52,17 @@ public class ObjectDeletion : MonoBehaviour
 
         /////////////yaraaabb/////////////////////
         Update_pos();
-        panel.GetComponent<RectTransform>().localScale = new Vector2(0.1f, 0.1f);
+        panel.GetComponent<RectTransform>().localScale = new Vector2(0.5f, 0.5f);
         panel.SetActive(true);  
-        panel.GetComponent<RectTransform>().SetAsLastSibling();
-    }
-    void Update_pos()
-    {
-        Vector2 vec = (Vector2)Camera.main.WorldToScreenPoint(parent.transform.position);
-        RectTransformUtility.ScreenPointToLocalPointInRectangle(parentRect, vec, null, out Vector2 localPoint);
-        panel.transform.position = localPoint;
+      //  panel.GetComponent<RectTransform>().SetAsLastSibling();
     }
 
+    void Update_pos()
+    {
+        Vector2 vec = Camera.main.WorldToScreenPoint(parent.transform.position);
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(parentRect, vec, null, out Vector2 localPoint);
+        panel.transform.localPosition = localPoint;
+    }
 
     public Transform getParent()
     {
