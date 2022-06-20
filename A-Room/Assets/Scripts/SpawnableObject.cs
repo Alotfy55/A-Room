@@ -55,48 +55,51 @@ public class SpawnableObject : MonoBehaviour
             placementIndicatorObj.transform.SetPositionAndRotation(placementPose.position, placementPose.rotation);
         }
         else
-        {
-            Destroy(placementIndicatorObj);
+        {  
+            if(placementIndicatorObj != null)
+                Destroy(placementIndicatorObj);
             //placementIndicator.SetActive(false);
         }
     }
 
     private void UpdatePlacementPose()
     {
-        var screenCenter = Camera.current.ViewportToScreenPoint(new Vector3(0.5f,0.5f));
-        List<ARRaycastHit> hits = new List<ARRaycastHit>();
-        arRaycastManager.Raycast(screenCenter, hits, TrackableType.PlaneWithinPolygon); // whether touch hits a detected plane plane
+        if (picked) { 
+            var screenCenter = Camera.current.ViewportToScreenPoint(new Vector3(0.5f, 0.5f));
+            List<ARRaycastHit> hits = new List<ARRaycastHit>();
+            arRaycastManager.Raycast(screenCenter, hits, TrackableType.PlaneWithinPolygon); // whether touch hits a detected plane plane
 
-        placementPoseIsValid = hits.Count > 0;
+            placementPoseIsValid = hits.Count > 0;
 
-        if (placementPoseIsValid)
-        {
-            placementPose = hits[0].pose;
-
-            var cameraForward = Camera.current.transform.forward;
-            var cameraBearing = new Vector3(cameraForward.x, 0, cameraForward.z).normalized;
-            placementPose.rotation = Quaternion.LookRotation(cameraBearing);  
-        }
-        if (Input.touchCount > 0 && placementPoseIsValid && picked) // touch occured
-        {
-            foreach (Touch touch in Input.touches)
+            if (placementPoseIsValid)
             {
-                if (EventSystem.current.IsPointerOverGameObject(touch.fingerId))
-                {
-                    return;
-                }
+                placementPose = hits[0].pose;
+
+                var cameraForward = Camera.current.transform.forward;
+                var cameraBearing = new Vector3(cameraForward.x, 0, cameraForward.z).normalized;
+                placementPose.rotation = Quaternion.LookRotation(cameraBearing);
             }
-            if (Input.GetTouch(0).phase == TouchPhase.Began && spawnablePrefab) // check for a touch and no object have been instantiate before 
+            if (Input.touchCount > 0 && placementPoseIsValid) // touch occured
             {
-                addLeanComponents(spawnablePrefab); // Add components to current prefab.
-                SpawnPrefab(); // Instantiate an object in the ar scene
-                cancel.gameObject.SetActive(false);
-                //setMaterial(mat);
-                picked = false;
+                foreach (Touch touch in Input.touches)
+                {
+                    if (EventSystem.current.IsPointerOverGameObject(touch.fingerId))
+                    {
+                        return;
+                    }
+                }
+                if (Input.GetTouch(0).phase == TouchPhase.Began && spawnablePrefab) // check for a touch and no object have been instantiate before 
+                {
+                    addLeanComponents(spawnablePrefab); // Add components to current prefab.
+                    SpawnPrefab(); // Instantiate an object in the ar scene
+                    cancel.gameObject.SetActive(false);
+                    //setMaterial(mat);
+                    picked = false;
 
-                Vector3 s1 = spawnablePrefab.GetComponent<Renderer>().bounds.size;
-                debuger.text = s1.ToString();
+                    Vector3 s1 = spawnablePrefab.GetComponent<Renderer>().bounds.size;
+                    debuger.text = s1.ToString();
 
+                }
             }
         }
     }
@@ -110,6 +113,7 @@ public class SpawnableObject : MonoBehaviour
 
     private GameObject SpawnPrefab()
     {
+       this.gameObject.GetComponent<ObjectDeletion>().numOfFurniture++;
        return spawnableObject = Instantiate(spawnablePrefab, placementPose.position, placementPose.rotation);
     }
 
@@ -119,6 +123,7 @@ public class SpawnableObject : MonoBehaviour
         picked = false;
         cancel.gameObject.SetActive(false);
     }
+
     private void setMaterial(GameObject gameObject,Material material)
     {
         Renderer rend = gameObject.GetComponent<Renderer>();
@@ -132,20 +137,6 @@ public class SpawnableObject : MonoBehaviour
         rend.sharedMaterials = materials;
     }
 
-    public void newScale(GameObject theGameObject, Vector3 newSize)
-    {
-
-        Vector3 size = theGameObject.GetComponent<Renderer>().bounds.size;
-
-        Vector3 rescale = theGameObject.transform.localScale;
-
-        rescale.x = rescale.x * newSize.x / size.x;
-        rescale.y = 0.001f;
-        rescale.z = rescale.z* newSize.z / size.z;
-
-        theGameObject.transform.localScale = rescale;
-
-    }
     public void addLeanComponents(GameObject prefab)
     {
         //prefab.AddComponent<LeanSelectable>();
@@ -167,10 +158,10 @@ public class SpawnableObject : MonoBehaviour
         }
         if (leanTranslate == null)
         {
-            prefab.AddComponent<LeanDragTranslate>();
-            prefab.GetComponent<LeanDragTranslate>().Use.RequiredFingerCount = 1;
-            prefab.GetComponent<LeanDragTranslate>().Camera = GameObject.Find("AR Camera").GetComponent<Camera>();
-            prefab.GetComponent<LeanDragTranslate>().Sensitivity = 2;
+            LeanDragTranslate ld = prefab.AddComponent<LeanDragTranslate>();
+            ld.Use.RequiredFingerCount = 1;
+            ld.Camera = GameObject.Find("AR Camera").GetComponent<Camera>();
+            ld.Sensitivity = 2;
         }
         if (leanRotate == null)
         {
@@ -188,12 +179,13 @@ public class SpawnableObject : MonoBehaviour
         }
         if (rigidBody == null)
         {
-            prefab.AddComponent<Rigidbody>();
-            prefab.GetComponent<Rigidbody>().useGravity = false;
-            prefab.GetComponent<Rigidbody>().drag = float.MaxValue;
-            prefab.GetComponent<Rigidbody>().angularDrag = float.MaxValue;
-            prefab.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotationX;
-            prefab.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotationZ;
+            Rigidbody rd = prefab.AddComponent<Rigidbody>();
+            rd.useGravity = false;
+            rd.drag = float.MaxValue;
+            rd.angularDrag = float.MaxValue;
+            rd.constraints = RigidbodyConstraints.FreezeRotationX;
+            rd.constraints = RigidbodyConstraints.FreezeRotationZ;
+            rd.isKinematic = true;
         }
            
         

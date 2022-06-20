@@ -11,9 +11,12 @@ public class ObjectDeletion : MonoBehaviour
     List<ARRaycastHit> hits = new List<ARRaycastHit>();
     Camera arCamera;
 
+    public GameObject[] furnitures;
     public GameObject panel;
     Transform parent;
     public RectTransform parentRect;
+    public Button removeAll;
+    public int numOfFurniture = 0;
 
     public void SwitchShowHide()
     {
@@ -72,11 +75,27 @@ public class ObjectDeletion : MonoBehaviour
         arCamera = GameObject.Find("AR Camera").GetComponent<Camera>();  // get the ar camera 
     }
 
+    
+    public void removeFurniture()
+    {
+        
+        furnitures = GameObject.FindGameObjectsWithTag("FurnitureModels");
 
+        foreach (GameObject furniture in furnitures)
+        {
+            Destroy(furniture);
+        }
+        numOfFurniture = 0;
+    }
 
-    // Update is called once per frame
+        // Update is called once per frame
     void Update()
     {
+        if (numOfFurniture == 0)
+            removeAll.gameObject.SetActive(false);
+        else
+            removeAll.gameObject.SetActive(true);
+
         //if (parent != null)
         //    Update_pos();
         if (Input.touchCount == 2)   // touch occured
