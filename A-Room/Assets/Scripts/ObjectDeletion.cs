@@ -11,17 +11,14 @@ public class ObjectDeletion : MonoBehaviour
     List<ARRaycastHit> hits = new List<ARRaycastHit>();
     Camera arCamera;
 
-<<<<<<< Updated upstream
     public GameObject[] furnitures;
-    public GameObject panel;
-    Transform parent;
-    public RectTransform parentRect;
     public Button removeAll;
     public int numOfFurniture = 0;
-=======
+
+
     public GameObject Menus;
     Transform parent_model;
->>>>>>> Stashed changes
+
 
     public void SwitchShowHide()
     {
