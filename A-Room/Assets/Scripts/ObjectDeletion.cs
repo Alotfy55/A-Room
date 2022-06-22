@@ -11,19 +11,24 @@ public class ObjectDeletion : MonoBehaviour
     List<ARRaycastHit> hits = new List<ARRaycastHit>();
     Camera arCamera;
 
+<<<<<<< Updated upstream
     public GameObject[] furnitures;
     public GameObject panel;
     Transform parent;
     public RectTransform parentRect;
     public Button removeAll;
     public int numOfFurniture = 0;
+=======
+    public GameObject Menus;
+    Transform parent_model;
+>>>>>>> Stashed changes
 
     public void SwitchShowHide()
     {
 
-        //panels_canvas.transform.parent = parent;
-        //panels_canvas.transform.GetChild(0).gameObject.SetActive(true);
-        //panels_canvas.transform.GetChild(0).GetComponent<RectTransform>().localScale = new Vector2(0.01f, 0.01f);
+        Menus.transform.parent = parent_model;
+        Menus.transform.GetChild(0).gameObject.SetActive(true);
+        Menus.transform.GetChild(0).GetComponent<RectTransform>().localScale = new Vector2(0.5f, 0.5f);
 
 
         //parent = this.gameObject.GetComponent<RectTransform>();
@@ -51,22 +56,25 @@ public class ObjectDeletion : MonoBehaviour
         */
 
         /////////////yaraaabb/////////////////////
-        Update_pos();
-        panel.GetComponent<RectTransform>().localScale = new Vector2(0.5f, 0.5f);
-        panel.SetActive(true);  
+        //Update_pos();
+        //panel.GetComponent<RectTransform>().localScale = new Vector2(0.5f, 0.5f);
+        //panel.SetActive(true);  
       //  panel.GetComponent<RectTransform>().SetAsLastSibling();
+
+
+
     }
 
-    void Update_pos()
+    /*void Update_pos()
     {
         Vector2 vec = Camera.main.WorldToScreenPoint(parent.transform.position);
         RectTransformUtility.ScreenPointToLocalPointInRectangle(parentRect, vec, null, out Vector2 localPoint);
         panel.transform.localPosition = localPoint;
-    }
+    }*/
 
     public Transform getParent()
     {
-        return parent;
+        return parent_model;
     }
 
     // Start is called before the first frame update
@@ -111,7 +119,7 @@ public class ObjectDeletion : MonoBehaviour
                     {
                         if (hit.collider.gameObject.tag.Equals("FurnitureModels")) // if the ray collides with an object whose tag "FurnitureModels"
                         {
-                            parent = hit.collider.gameObject.transform;
+                            parent_model = hit.collider.gameObject.transform;
                             SwitchShowHide();
                         }
                     }
