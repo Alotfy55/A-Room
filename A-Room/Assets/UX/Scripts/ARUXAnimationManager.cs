@@ -73,7 +73,6 @@ public class ARUXAnimationManager : MonoBehaviour
     float m_TweenDuration;
 
     const string k_MoveDeviceText = "Move Device Slowly";
-    const string k_TapToPlaceText = "Tap to Place AR";
 
 
     public static event Action onFadeOffComplete;
