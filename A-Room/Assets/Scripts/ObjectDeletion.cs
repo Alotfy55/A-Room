@@ -22,10 +22,8 @@ public class ObjectDeletion : MonoBehaviour
 
     public void SwitchShowHide()
     {
-
         Menus.transform.parent = parent_model;
-        Menus.transform.GetChild(0).gameObject.SetActive(true);
-        Menus.transform.localPosition = new Vector3(0f, 1f, 0f);
+
         //Menus.transform.GetChild(0).GetComponent<RectTransform>().localScale = new Vector2(0.5f, 0.5f);
 
 
@@ -59,17 +57,10 @@ public class ObjectDeletion : MonoBehaviour
         //panel.SetActive(true);  
         //  panel.GetComponent<RectTransform>().SetAsLastSibling();
 
-
+        Menus.transform.gameObject.SetActive(true);
+        Menus.transform.localPosition = new Vector3(0f, 1f, 0f);
 
     }
-
-    /*void Update_pos()
-    {
-        Vector2 vec = Camera.main.WorldToScreenPoint(parent.transform.position);
-        RectTransformUtility.ScreenPointToLocalPointInRectangle(parentRect, vec, null, out Vector2 localPoint);
-        panel.transform.localPosition = localPoint;
-    }*/
-
     public Transform getParent()
     {
         return parent_model;
@@ -80,8 +71,6 @@ public class ObjectDeletion : MonoBehaviour
     {
         arCamera = GameObject.Find("AR Camera").GetComponent<Camera>();  // get the ar camera 
     }
-
-    
     public void removeFurniture()
     {
         
@@ -102,8 +91,6 @@ public class ObjectDeletion : MonoBehaviour
         else
             removeAll.gameObject.SetActive(true);
 
-        //if (parent != null)
-        //    Update_pos();
         if (Input.touchCount == 2)   // touch occured
         {
             if (arRaycastManager.Raycast(Input.GetTouch(0).position, hits)) // whether touch hits a detected plane plane

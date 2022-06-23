@@ -13,7 +13,8 @@ public class Open_Info_Panel : MonoBehaviour
 
     public void Open_panel()
     {
-        this.transform.parent.gameObject.SetActive(false);
+
+        this.transform.parent.parent.gameObject.SetActive(false);
         info_panel.SetActive(true);
 
         l = info_panel.transform.GetChild(7).gameObject;
