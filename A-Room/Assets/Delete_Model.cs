@@ -11,7 +11,8 @@ public class Delete_Model : MonoBehaviour
         var obj = FindObjectOfType<ObjectDeletion>();
         obj.numOfFurniture--;
         model = obj.getParent();
+        model.transform.GetChild(0).gameObject.SetActive(false);
+        model.transform.GetChild(0).parent = null;
         Destroy(model.gameObject);  
-        this.transform.parent.gameObject.SetActive(false);
     }
 }
