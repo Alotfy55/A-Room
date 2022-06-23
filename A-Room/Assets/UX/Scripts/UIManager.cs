@@ -78,12 +78,12 @@ public class UIManager : MonoBehaviour
     }
 
     Func<bool> m_GoalReached;
-    bool m_SecondaryGoalReached;
+
     
     Queue<UXHandle> m_UXOrderedQueue;
     UXHandle m_CurrentHandle;
     bool m_ProcessingInstructions;
-    bool m_PlacedObject;
+
 
     [SerializeField]
     ARPlaneManager m_PlaneManager;
@@ -114,11 +114,10 @@ public class UIManager : MonoBehaviour
         set => m_LocalizationManager = value;
     }
 
-    void OnEnable()
+    public void OnEnable()
     {
+        m_ProcessingInstructions = false;
         ARUXAnimationManager.onFadeOffComplete += FadeComplete;
-
-        PlaceObjectsOnPlane.onPlacedObject += () => m_PlacedObject = true;
 
         GetManagers();
         m_UXOrderedQueue = new Queue<UXHandle>();
@@ -148,7 +147,7 @@ public class UIManager : MonoBehaviour
         {
             // pop off
             m_CurrentHandle = m_UXOrderedQueue.Dequeue();
-            
+
             // exit instantly, if the goal is already met it will skip showing the first UI and move to the next in the queue 
             m_GoalReached = GetGoal(m_CurrentHandle.Goal);
             if (m_GoalReached.Invoke())
@@ -228,25 +227,13 @@ public class UIManager : MonoBehaviour
         m_ProcessingInstructions = false;
     }
 
-    bool PlacedObject()
-    {
-        // reset flag to be used multiple times
-        if (m_PlacedObject)
-        {
-            m_PlacedObject = false;
-            return true;
-        }
-        return m_PlacedObject;
-    }
+
 
     public void AddToQueue(UXHandle uxHandle)
     {
         m_UXOrderedQueue.Enqueue(uxHandle);
     }
 
-    public void TestFlipPlacementBool()
-    {
-        m_PlacedObject = true;
-    }
+
 }
 

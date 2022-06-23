@@ -18,7 +18,8 @@ public class ObjectDeletion : MonoBehaviour
 
     public GameObject Menus;
     Transform parent_model;
-
+    float temps;
+    bool click;
 
     public void SwitchShowHide()
     {
@@ -91,7 +92,15 @@ public class ObjectDeletion : MonoBehaviour
         else
             removeAll.gameObject.SetActive(true);
 
-        if (Input.touchCount == 2)   // touch occured
+
+
+        if (Input.touchCount == 1)
+        {
+            temps = Time.time;
+            click = true;
+        }
+
+        if (click && (Time.time - temps) > 1)   // touch occured
         {
             if (arRaycastManager.Raycast(Input.GetTouch(0).position, hits)) // whether touch hits a detected plane plane
             {
@@ -110,6 +119,11 @@ public class ObjectDeletion : MonoBehaviour
                     }
                 }
             }
+        }
+
+        if (Input.touchCount == 0)
+        {
+            click = false;
         }
     }
 }
