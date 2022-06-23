@@ -25,7 +25,8 @@ public class ObjectDeletion : MonoBehaviour
 
         Menus.transform.parent = parent_model;
         Menus.transform.GetChild(0).gameObject.SetActive(true);
-        Menus.transform.GetChild(0).GetComponent<RectTransform>().localScale = new Vector2(0.5f, 0.5f);
+        Menus.transform.localPosition = new Vector3(0f, 1f, 0f);
+        //Menus.transform.GetChild(0).GetComponent<RectTransform>().localScale = new Vector2(0.5f, 0.5f);
 
 
         //parent = this.gameObject.GetComponent<RectTransform>();
@@ -56,7 +57,7 @@ public class ObjectDeletion : MonoBehaviour
         //Update_pos();
         //panel.GetComponent<RectTransform>().localScale = new Vector2(0.5f, 0.5f);
         //panel.SetActive(true);  
-      //  panel.GetComponent<RectTransform>().SetAsLastSibling();
+        //  panel.GetComponent<RectTransform>().SetAsLastSibling();
 
 
 
