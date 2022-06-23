@@ -28,6 +28,8 @@ public class SpawnableObject : MonoBehaviour
     GameObject spawnableObject;
     public Vector3 scale;
 
+    public AudioSource audioSource;
+
     public Button cancel;
 
     public Text debuger;
@@ -36,6 +38,7 @@ public class SpawnableObject : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         picked = false;
         spawnableObject = null;
     }
@@ -114,6 +117,7 @@ public class SpawnableObject : MonoBehaviour
     private GameObject SpawnPrefab()
     {
        this.gameObject.GetComponent<ObjectDeletion>().numOfFurniture++;
+       audioSource.Play();
        return spawnableObject = Instantiate(spawnablePrefab, placementPose.position, placementPose.rotation);
     }
 
