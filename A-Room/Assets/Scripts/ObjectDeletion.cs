@@ -23,42 +23,8 @@ public class ObjectDeletion : MonoBehaviour
     public void SwitchShowHide()
     {
         Menus.transform.parent = parent_model;
-
-        //Menus.transform.GetChild(0).GetComponent<RectTransform>().localScale = new Vector2(0.5f, 0.5f);
-
-
-        //parent = this.gameObject.GetComponent<RectTransform>();
-        //panel.transform.SetParent( canvas.transform, true);
-        //panel.GetComponent<RectTransform>().localScale = new Vector2(0.01f, 0.01f);
-        //update_option_panel_pos();
-        //panel.SetActive(true);
-        /*
-
-             panel.transform.SetParent(parent.transform, false);
-             panel.GetComponent<RectTransform>().localScale = new Vector2(0.001f, 0.001f);
-
-             RectTransform CanvasRect = canvas.GetComponent<RectTransform>();
-
-
-             Vector2 ViewportPosition = Camera.main.WorldToViewportPoint(parent.transform.position);
-             Vector2 WorldObject_ScreenPosition = new Vector2(
-             ((ViewportPosition.x * CanvasRect.sizeDelta.x) - (CanvasRect.sizeDelta.x * 0.5f)),
-             ((ViewportPosition.y * CanvasRect.sizeDelta.y) - (CanvasRect.sizeDelta.y * 0.5f)));
-
-             panel.GetComponent<RectTransform>().anchoredPosition = WorldObject_ScreenPosition;
-             //panel.transform.localPosition = new Vector3(0, 1, 0);
-             panel.SetActive(true);
-             panel.GetComponent<RectTransform>().SetAsLastSibling();
-        */
-
-        /////////////yaraaabb/////////////////////
-        //Update_pos();
-        //panel.GetComponent<RectTransform>().localScale = new Vector2(0.5f, 0.5f);
-        //panel.SetActive(true);  
-        //  panel.GetComponent<RectTransform>().SetAsLastSibling();
-
         Menus.transform.gameObject.SetActive(true);
-        Menus.transform.localPosition = new Vector3(0f, 1f, 0f);
+        Menus.transform.localPosition = new Vector3(0f, parent_model.GetComponent<Renderer>().bounds.size.y + 0.3f, 0f);
 
     }
     public Transform getParent()
