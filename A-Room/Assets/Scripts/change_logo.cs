@@ -6,29 +6,16 @@ using UnityEngine.UI;
 public class change_logo : MonoBehaviour
 {
 
-    public Sprite sprite1;
-    public Sprite sprite2;
-    public Button button;
-
-
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-
-    }
-
+    public Sprite Up_Arrow;
+    public Sprite Down_Arrow;
+    public Button Slider_Button;
     public void ChangeTheSprite()
     {
-        
-        button = GetComponent<Button>();
+        Slider_Button = GetComponent<Button>();
 
-        if (button.image.sprite == sprite1)
-            button.image.sprite = sprite2;
+        if (Slider_Button.image.sprite == Up_Arrow)
+            Slider_Button.image.sprite = Down_Arrow;
         else
-            button.image.sprite = sprite1;
+            Slider_Button.image.sprite = Up_Arrow;
     }
 }
