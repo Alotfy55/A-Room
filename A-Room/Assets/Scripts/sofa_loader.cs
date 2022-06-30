@@ -13,11 +13,8 @@ public class sofa_loader : MonoBehaviour
 
     public void Create()
     {
-        //GameObject a = (GameObject)Instantiate(b);
         cancel.gameObject.SetActive(true);
         SpawnableObject temp = spawner.GetComponent<SpawnableObject>();
-        temp.scale = b.GetComponent<Renderer>().bounds.size;
-        //temp.newScale(temp.placementIndicator.transform.GetChild(0).gameObject, temp.scale);
         temp.spawnablePrefab = b;
         temp.placementIndicator = c;
 
@@ -25,8 +22,6 @@ public class sofa_loader : MonoBehaviour
         
         spawner.GetComponent<SpawnableObject>().picked = true;
         slider.GetComponent<Button>().onClick.Invoke();
-        //shootButton = GameObject.FindGameObjectWithTag("ShootButton");
-        //shootButton.onClick.Invoke();
-        ////a.transform.SetParent(panel.transform);
+
     }
 }

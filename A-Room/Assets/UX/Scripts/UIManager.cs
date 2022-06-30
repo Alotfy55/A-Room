@@ -150,10 +150,7 @@ public class UIManager : MonoBehaviour
 
             // exit instantly, if the goal is already met it will skip showing the first UI and move to the next in the queue 
             m_GoalReached = GetGoal(m_CurrentHandle.Goal);
-            if (m_GoalReached.Invoke())
-            {
-                return;
-            }
+            
 
             // fade on
             FadeOnInstructionalUI(m_CurrentHandle.InstructionalUI);

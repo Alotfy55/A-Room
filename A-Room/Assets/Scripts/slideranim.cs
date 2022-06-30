@@ -14,40 +14,21 @@ public class slideranim : MonoBehaviour
         
         if (opened)
         {
-            //transform.position += new Vector3(0, 500, 0);
             StartCoroutine(SmoothMove(rt.sizeDelta,1700, easing));
-           // rt.sizeDelta = new Vector2(rt.sizeDelta.x, 1700);
             opened = false;
         }
         else
         {
-           // rt.sizeDelta = new Vector2(rt.sizeDelta.x, 0);
             StartCoroutine(SmoothMove(rt.sizeDelta, 0, easing));
             opened = true;
         }
-
-
-
-        //if (PanelMenu != null)
-        //{
-        //    Animator animator = PanelMenu.GetComponent<Animator>();
-        //    if (animator != null)
-        //    {
-        //        bool isopen = animator.GetBool("show");
-        //        animator.SetBool("show", !isopen);
-
-        //    }
-        //}
 
     }
     IEnumerator SmoothMove(Vector2 startpos, int hight, float seconds)
     {
         float t = 0f;
         Vector2 endpos = rt.sizeDelta;
-       
-        
-       
-            endpos.y = hight;
+        endpos.y = hight;
         
         while (t <= 1.0)
         {

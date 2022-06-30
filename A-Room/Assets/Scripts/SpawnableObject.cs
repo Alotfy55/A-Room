@@ -26,7 +26,6 @@ public class SpawnableObject : MonoBehaviour
     private bool placementPoseIsValid = false;
     private Pose placementPose;
     GameObject spawnableObject;
-    public Vector3 scale;
 
     public AudioSource audioSource;
 
@@ -52,16 +51,13 @@ public class SpawnableObject : MonoBehaviour
                 placementIndicatorObj = Instantiate(placementIndicator, placementPose.position, placementPose.rotation);
                 setMaterial(placementIndicatorObj, TransMat);
             }
-            //newScale(placementIndicator.transform.GetChild(0).gameObject,scale);
-            //placementIndicator.transform.GetChild(0).transform.localScale = scale;
-            //placementIndicatorObj.SetActive(true);
             placementIndicatorObj.transform.SetPositionAndRotation(placementPose.position, placementPose.rotation);
         }
         else
         {  
             if(placementIndicatorObj != null)
                 Destroy(placementIndicatorObj);
-            //placementIndicator.SetActive(false);
+
         }
     }
 
@@ -143,9 +139,6 @@ public class SpawnableObject : MonoBehaviour
 
     public void addLeanComponents(GameObject prefab)
     {
-        //prefab.AddComponent<LeanSelectable>();
-        
-        
 
         var leanTranslate = prefab.GetComponent<LeanDragTranslate>();
         var leanRotate = prefab.GetComponent<LeanTwistRotateAxis>();

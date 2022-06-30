@@ -60,7 +60,7 @@ public class ObjectDeletion : MonoBehaviour
 
 
 
-        if (Input.touchCount == 1)
+        if (Input.touchCount == 1 && !click)
         {
             temps = Time.time;
             click = true;
@@ -87,7 +87,7 @@ public class ObjectDeletion : MonoBehaviour
             }
         }
 
-        if (Input.touchCount == 0)
+        if (Input.touchCount == 0 && click)
         {
             click = false;
         }

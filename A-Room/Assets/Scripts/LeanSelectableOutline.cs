@@ -7,12 +7,6 @@ using Lean.Touch;
 public class LeanSelectableOutline : LeanSelectableBehaviour
 {
     
-
-    protected virtual void Awake()
-    {
-        
-    }
-
     protected override void OnSelected(LeanSelect select)
     {
         this.gameObject.GetComponent<Outline1>().enabled = true;
