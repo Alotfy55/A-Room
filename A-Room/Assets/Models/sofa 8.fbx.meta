@@ -1,0 +1,1221 @@
+fileFormatVersion: 2
+guid: 7d22297cacba91e42a59ae55d106fc47
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: -2487854542395081011
+    second: Box002|Box002|Box002|Box002|Take 001|BaseLayer|Box002|Box002|Take 001|
+  - first:
+      74: -8129487515845401449
+    second: Box002|Box002|Box002|Box005|Take 001|BaseLayer|Box002|Box005|Take 001|
+  - first:
+      74: -4229981233174660287
+    second: Box002|Box002|Box002|Box006|Take 001|BaseLayer|Box002|Box006|Take 001|
+  - first:
+      74: -6202612336721909224
+    second: Box002|Box002|Box002|Box010|Take 001|BaseLayer|Box002|Box010|Take 001|
+  - first:
+      74: -5715635145646834227
+    second: Box002|Box002|Box002|Box012|Take 001|BaseLayer|Box002|Box012|Take 001|
+  - first:
+      74: 6817289504839441050
+    second: Box002|Box002|Box002|Box017|Take 001|BaseLayer|Box002|Box017|Take 001|
+  - first:
+      74: -9034299750892539530
+    second: Box002|Box002|Box002|Box018|Take 001|BaseLayer|Box002|Box018|Take 001|
+  - first:
+      74: 5921009643862496312
+    second: Box002|Box002|Box002|Box019|Take 001|BaseLayer|Box002|Box019|Take 001|
+  - first:
+      74: -3735113169014479801
+    second: Box002|Box002|Box002|Box020|Take 001|BaseLayer|Box002|Box020|Take 001|
+  - first:
+      74: 4174358136794817538
+    second: Box002|Box002|Box002|Box021|Take 001|BaseLayer|Box002|Box021|Take 001|
+  - first:
+      74: 1455507073511483200
+    second: Box002|Box002|Box002|Camera001.Target|Take 001|BaseLayer|Box002|Camera
+  - first:
+      74: -3391219990979894976
+    second: Box002|Box002|Box002|Camera001|Take 001|BaseLayer|Box002|Camera001|Tak
+  - first:
+      74: -8083565787494783512
+    second: Box002|Box002|Box002|VRayLight001|Take 001|BaseLayer|Box002|VRayLight0
+  - first:
+      74: 4493809574093563776
+    second: Box002|Box004|Box004|Box004|Take 001|BaseLayer|Box004|Box004|Take 001|
+  - first:
+      74: 1730818197774240803
+    second: Box002|Box004|Box004|Box005|Take 001|BaseLayer|Box004|Box005|Take 001|
+  - first:
+      74: -201413337516994074
+    second: Box002|Box004|Box004|Box008|Take 001|BaseLayer|Box004|Box008|Take 001|
+  - first:
+      74: -7834879094558504799
+    second: Box002|Box004|Box004|Box011|Take 001|BaseLayer|Box004|Box011|Take 001|
+  - first:
+      74: -5618680475270956225
+    second: Box002|Box004|Box004|Box012|Take 001|BaseLayer|Box004|Box012|Take 001|
+  - first:
+      74: -2541351324432753101
+    second: Box002|Box004|Box004|Box017|Take 001|BaseLayer|Box004|Box017|Take 001|
+  - first:
+      74: -7581962503232791140
+    second: Box002|Box004|Box004|Box018|Take 001|BaseLayer|Box004|Box018|Take 001|
+  - first:
+      74: -5537889458471788881
+    second: Box002|Box004|Box004|Box020|Take 001|BaseLayer|Box004|Box020|Take 001|
+  - first:
+      74: 3280109968271556933
+    second: Box002|Box004|Box004|Box022|Take 001|BaseLayer|Box004|Box022|Take 001|
+  - first:
+      74: -10666887861251695
+    second: Box002|Box004|Box004|Box023|Take 001|BaseLayer|Box004|Box023|Take 001|
+  - first:
+      74: 5386944354369186009
+    second: Box002|Box004|Box004|Box024|Take 001|BaseLayer|Box004|Box024|Take 001|
+  - first:
+      74: -1214110505575127510
+    second: Box002|Box004|Box004|Box025|Take 001|BaseLayer|Box004|Box025|Take 001|
+  - first:
+      74: 3252578911700288432
+    second: Box002|Box004|Box004|Box026|Take 001|BaseLayer|Box004|Box026|Take 001|
+  - first:
+      74: 8426528111311058548
+    second: Box002|Box004|Box004|Box027|Take 001|BaseLayer|Box004|Box027|Take 001|
+  - first:
+      74: -703457756800687198
+    second: Box002|Box004|Box004|Box028|Take 001|BaseLayer|Box004|Box028|Take 001|
+  - first:
+      74: -5478539977743546123
+    second: Box002|Box004|Box004|Camera001.Target|Take 001|BaseLayer|Box004|Camera
+  - first:
+      74: -5511410259495906241
+    second: Box002|Box004|Box004|Camera001|Take 001|BaseLayer|Box004|Camera001|Tak
+  - first:
+      74: 2666788715958233015
+    second: Box002|Box004|Box004|VRayLight001|Take 001|BaseLayer|Box004|VRayLight0
+  - first:
+      74: -4447168240606117880
+    second: Box002|Box005|Box005|Box002|Take 001|BaseLayer|Box005|Box002|Take 001|
+  - first:
+      74: -4875695977367678679
+    second: Box002|Box005|Box005|Box004|Take 001|BaseLayer|Box005|Box004|Take 001|
+  - first:
+      74: 6406005037426002728
+    second: 'Box002|Box005|Box005|Box005|Take 001|BaseLayer|Box005|Box005|Take '
+  - first:
+      74: 7053406527059548949
+    second: Box002|Box005|Box005|Box005|Take 001|BaseLayer|Box005|Box005|Take 001|
+  - first:
+      74: 9096616073620272373
+    second: Box002|Box005|Box005|Box006|Take 001|BaseLayer|Box005|Box006|Take 001|
+  - first:
+      74: 1693224595453031705
+    second: Box002|Box005|Box005|Box008|Take 001|BaseLayer|Box005|Box008|Take 001|
+  - first:
+      74: -4403727958128781451
+    second: Box002|Box005|Box005|Box010|Take 001|BaseLayer|Box005|Box010|Take 001|
+  - first:
+      74: -8422087974434128500
+    second: Box002|Box005|Box005|Box011|Take 001|BaseLayer|Box005|Box011|Take 001|
+  - first:
+      74: -3656794995756073664
+    second: 'Box002|Box005|Box005|Box012|Take 001|BaseLayer|Box005|Box012|Take '
+  - first:
+      74: 4594423086443818654
+    second: Box002|Box005|Box005|Box012|Take 001|BaseLayer|Box005|Box012|Take 001|
+  - first:
+      74: -6741427133658621723
+    second: 'Box002|Box005|Box005|Box017|Take 001|BaseLayer|Box005|Box017|Take '
+  - first:
+      74: 1328496871202294095
+    second: Box002|Box005|Box005|Box017|Take 001|BaseLayer|Box005|Box017|Take 001|
+  - first:
+      74: -7041825833496932033
+    second: 'Box002|Box005|Box005|Box018|Take 001|BaseLayer|Box005|Box018|Take '
+  - first:
+      74: 5000442206670605622
+    second: Box002|Box005|Box005|Box018|Take 001|BaseLayer|Box005|Box018|Take 001|
+  - first:
+      74: 5863737395385437047
+    second: Box002|Box005|Box005|Box019|Take 001|BaseLayer|Box005|Box019|Take 001|
+  - first:
+      74: -5650565067820552696
+    second: 'Box002|Box005|Box005|Box020|Take 001|BaseLayer|Box005|Box020|Take '
+  - first:
+      74: -7839506359949427401
+    second: Box002|Box005|Box005|Box020|Take 001|BaseLayer|Box005|Box020|Take 001|
+  - first:
+      74: -2885029088483911715
+    second: Box002|Box005|Box005|Box021|Take 001|BaseLayer|Box005|Box021|Take 001|
+  - first:
+      74: -6742340016795052447
+    second: Box002|Box005|Box005|Box022|Take 001|BaseLayer|Box005|Box022|Take 001|
+  - first:
+      74: -3262892617789662237
+    second: Box002|Box005|Box005|Box023|Take 001|BaseLayer|Box005|Box023|Take 001|
+  - first:
+      74: 5351552774186367858
+    second: Box002|Box005|Box005|Box024|Take 001|BaseLayer|Box005|Box024|Take 001|
+  - first:
+      74: -8585538996408796644
+    second: Box002|Box005|Box005|Box025|Take 001|BaseLayer|Box005|Box025|Take 001|
+  - first:
+      74: 2796792199895362176
+    second: Box002|Box005|Box005|Box026|Take 001|BaseLayer|Box005|Box026|Take 001|
+  - first:
+      74: 5031640368995015013
+    second: Box002|Box005|Box005|Box027|Take 001|BaseLayer|Box005|Box027|Take 001|
+  - first:
+      74: 9188652652808750609
+    second: Box002|Box005|Box005|Box028|Take 001|BaseLayer|Box005|Box028|Take 001|
+  - first:
+      74: -3010026738261711765
+    second: Box002|Box005|Box005|Camera001.Target|Take 001|BaseLayer|Box005|Ca
+  - first:
+      74: 4602541085217132509
+    second: Box002|Box005|Box005|Camera001.Target|Take 001|BaseLayer|Box005|Camera
+  - first:
+      74: -4773809187084135250
+    second: Box002|Box005|Box005|Camera001|Take 001|BaseLayer|Box005|Camera001
+  - first:
+      74: -4764352552123830877
+    second: Box002|Box005|Box005|Camera001|Take 001|BaseLayer|Box005|Camera001|Tak
+  - first:
+      74: -2209888082191639373
+    second: Box002|Box005|Box005|VRayLight001|Take 001|BaseLayer|Box005|VRayLi
+  - first:
+      74: 3107638397523772659
+    second: Box002|Box005|Box005|VRayLight001|Take 001|BaseLayer|Box005|VRayLight0
+  - first:
+      74: 2328658080077441363
+    second: Box002|Box006|Box006|Box002|Take 001|BaseLayer|Box006|Box002|Take 001|
+  - first:
+      74: 2300946099971781781
+    second: Box002|Box006|Box006|Box005|Take 001|BaseLayer|Box006|Box005|Take 001|
+  - first:
+      74: -3163772729557837789
+    second: Box002|Box006|Box006|Box006|Take 001|BaseLayer|Box006|Box006|Take 001|
+  - first:
+      74: 4210716359849450663
+    second: Box002|Box006|Box006|Box010|Take 001|BaseLayer|Box006|Box010|Take 001|
+  - first:
+      74: 6294488817909801967
+    second: Box002|Box006|Box006|Box012|Take 001|BaseLayer|Box006|Box012|Take 001|
+  - first:
+      74: 4909856353329051270
+    second: Box002|Box006|Box006|Box017|Take 001|BaseLayer|Box006|Box017|Take 001|
+  - first:
+      74: -6063194187162570232
+    second: Box002|Box006|Box006|Box018|Take 001|BaseLayer|Box006|Box018|Take 001|
+  - first:
+      74: 3334049228445113683
+    second: Box002|Box006|Box006|Box019|Take 001|BaseLayer|Box006|Box019|Take 001|
+  - first:
+      74: 3155312126195654094
+    second: Box002|Box006|Box006|Box020|Take 001|BaseLayer|Box006|Box020|Take 001|
+  - first:
+      74: -4853907655294082880
+    second: Box002|Box006|Box006|Box021|Take 001|BaseLayer|Box006|Box021|Take 001|
+  - first:
+      74: -1277424886603965865
+    second: Box002|Box006|Box006|Camera001.Target|Take 001|BaseLayer|Box006|Camera
+  - first:
+      74: 7689615800366802599
+    second: Box002|Box006|Box006|Camera001|Take 001|BaseLayer|Box006|Camera001|Tak
+  - first:
+      74: 8163370592207296313
+    second: Box002|Box006|Box006|VRayLight001|Take 001|BaseLayer|Box006|VRayLight0
+  - first:
+      74: 8885857012214248715
+    second: Box002|Box008|Box008|Box004|Take 001|BaseLayer|Box008|Box004|Take 001|
+  - first:
+      74: -7710157764330827658
+    second: Box002|Box008|Box008|Box005|Take 001|BaseLayer|Box008|Box005|Take 001|
+  - first:
+      74: 8914317150742091564
+    second: Box002|Box008|Box008|Box008|Take 001|BaseLayer|Box008|Box008|Take 001|
+  - first:
+      74: -1570159921414377262
+    second: Box002|Box008|Box008|Box011|Take 001|BaseLayer|Box008|Box011|Take 001|
+  - first:
+      74: -483748489442751299
+    second: Box002|Box008|Box008|Box012|Take 001|BaseLayer|Box008|Box012|Take 001|
+  - first:
+      74: -2516785931126515918
+    second: Box002|Box008|Box008|Box017|Take 001|BaseLayer|Box008|Box017|Take 001|
+  - first:
+      74: -8855038870988689817
+    second: Box002|Box008|Box008|Box018|Take 001|BaseLayer|Box008|Box018|Take 001|
+  - first:
+      74: -6812301690648938637
+    second: Box002|Box008|Box008|Box020|Take 001|BaseLayer|Box008|Box020|Take 001|
+  - first:
+      74: 6561316388846278769
+    second: Box002|Box008|Box008|Box022|Take 001|BaseLayer|Box008|Box022|Take 001|
+  - first:
+      74: 7072352793863300428
+    second: Box002|Box008|Box008|Box023|Take 001|BaseLayer|Box008|Box023|Take 001|
+  - first:
+      74: 7918706734810336619
+    second: Box002|Box008|Box008|Box024|Take 001|BaseLayer|Box008|Box024|Take 001|
+  - first:
+      74: -135991106769159146
+    second: Box002|Box008|Box008|Box025|Take 001|BaseLayer|Box008|Box025|Take 001|
+  - first:
+      74: 8744482635806556922
+    second: Box002|Box008|Box008|Box026|Take 001|BaseLayer|Box008|Box026|Take 001|
+  - first:
+      74: 4681887460838258347
+    second: Box002|Box008|Box008|Box027|Take 001|BaseLayer|Box008|Box027|Take 001|
+  - first:
+      74: -6630422725733441518
+    second: Box002|Box008|Box008|Box028|Take 001|BaseLayer|Box008|Box028|Take 001|
+  - first:
+      74: -8209400282175160707
+    second: Box002|Box008|Box008|Camera001.Target|Take 001|BaseLayer|Box008|Camera
+  - first:
+      74: -6918668055738690987
+    second: Box002|Box008|Box008|Camera001|Take 001|BaseLayer|Box008|Camera001|Tak
+  - first:
+      74: 7462318421287735967
+    second: Box002|Box008|Box008|VRayLight001|Take 001|BaseLayer|Box008|VRayLight0
+  - first:
+      74: -7002813968138589767
+    second: Box002|Box010|Box010|Box002|Take 001|BaseLayer|Box010|Box002|Take 001|
+  - first:
+      74: -270108258567276416
+    second: Box002|Box010|Box010|Box005|Take 001|BaseLayer|Box010|Box005|Take 001|
+  - first:
+      74: -1340172412772472588
+    second: Box002|Box010|Box010|Box006|Take 001|BaseLayer|Box010|Box006|Take 001|
+  - first:
+      74: 1869995428371184091
+    second: Box002|Box010|Box010|Box010|Take 001|BaseLayer|Box010|Box010|Take 001|
+  - first:
+      74: 1689549564103876118
+    second: Box002|Box010|Box010|Box012|Take 001|BaseLayer|Box010|Box012|Take 001|
+  - first:
+      74: 4622473083796522788
+    second: Box002|Box010|Box010|Box017|Take 001|BaseLayer|Box010|Box017|Take 001|
+  - first:
+      74: -5283916246824470008
+    second: Box002|Box010|Box010|Box018|Take 001|BaseLayer|Box010|Box018|Take 001|
+  - first:
+      74: 297754501495443227
+    second: Box002|Box010|Box010|Box019|Take 001|BaseLayer|Box010|Box019|Take 001|
+  - first:
+      74: -8066960648527286252
+    second: Box002|Box010|Box010|Box020|Take 001|BaseLayer|Box010|Box020|Take 001|
+  - first:
+      74: 6325249614772657645
+    second: Box002|Box010|Box010|Box021|Take 001|BaseLayer|Box010|Box021|Take 001|
+  - first:
+      74: -1785217446115742175
+    second: Box002|Box010|Box010|Camera001.Target|Take 001|BaseLayer|Box010|Camera
+  - first:
+      74: -3890276349615645962
+    second: Box002|Box010|Box010|Camera001|Take 001|BaseLayer|Box010|Camera001|Tak
+  - first:
+      74: 6496576775950456108
+    second: Box002|Box010|Box010|VRayLight001|Take 001|BaseLayer|Box010|VRayLight0
+  - first:
+      74: -369105334585282063
+    second: Box002|Box011|Box011|Box004|Take 001|BaseLayer|Box011|Box004|Take 001|
+  - first:
+      74: 8299291825197792364
+    second: Box002|Box011|Box011|Box005|Take 001|BaseLayer|Box011|Box005|Take 001|
+  - first:
+      74: 8990652809763100560
+    second: Box002|Box011|Box011|Box008|Take 001|BaseLayer|Box011|Box008|Take 001|
+  - first:
+      74: 7902767987458546150
+    second: Box002|Box011|Box011|Box011|Take 001|BaseLayer|Box011|Box011|Take 001|
+  - first:
+      74: 422421792833071868
+    second: Box002|Box011|Box011|Box012|Take 001|BaseLayer|Box011|Box012|Take 001|
+  - first:
+      74: -3744208996600122449
+    second: Box002|Box011|Box011|Box017|Take 001|BaseLayer|Box011|Box017|Take 001|
+  - first:
+      74: -9116012707365682981
+    second: Box002|Box011|Box011|Box018|Take 001|BaseLayer|Box011|Box018|Take 001|
+  - first:
+      74: 7811229019682086992
+    second: Box002|Box011|Box011|Box020|Take 001|BaseLayer|Box011|Box020|Take 001|
+  - first:
+      74: -6729968292723112466
+    second: Box002|Box011|Box011|Box022|Take 001|BaseLayer|Box011|Box022|Take 001|
+  - first:
+      74: 2895396381119657915
+    second: Box002|Box011|Box011|Box023|Take 001|BaseLayer|Box011|Box023|Take 001|
+  - first:
+      74: -5166522015812746488
+    second: Box002|Box011|Box011|Box024|Take 001|BaseLayer|Box011|Box024|Take 001|
+  - first:
+      74: 8065667563094070405
+    second: Box002|Box011|Box011|Box025|Take 001|BaseLayer|Box011|Box025|Take 001|
+  - first:
+      74: -3682106044310891221
+    second: Box002|Box011|Box011|Box026|Take 001|BaseLayer|Box011|Box026|Take 001|
+  - first:
+      74: -7211314745447160147
+    second: Box002|Box011|Box011|Box027|Take 001|BaseLayer|Box011|Box027|Take 001|
+  - first:
+      74: -2928011209799878146
+    second: Box002|Box011|Box011|Box028|Take 001|BaseLayer|Box011|Box028|Take 001|
+  - first:
+      74: 1590539816320579197
+    second: Box002|Box011|Box011|Camera001.Target|Take 001|BaseLayer|Box011|Camera
+  - first:
+      74: -164049217331779314
+    second: Box002|Box011|Box011|Camera001|Take 001|BaseLayer|Box011|Camera001|Tak
+  - first:
+      74: 7076454293893339270
+    second: Box002|Box011|Box011|VRayLight001|Take 001|BaseLayer|Box011|VRayLight0
+  - first:
+      74: 4348150545640759784
+    second: Box002|Box012|Box012|Box002|Take 001|BaseLayer|Box012|Box002|Take 001|
+  - first:
+      74: 3049941059654294339
+    second: Box002|Box012|Box012|Box004|Take 001|BaseLayer|Box012|Box004|Take 001|
+  - first:
+      74: 833912539693163342
+    second: 'Box002|Box012|Box012|Box005|Take 001|BaseLayer|Box012|Box005|Take '
+  - first:
+      74: 8602458310008160346
+    second: Box002|Box012|Box012|Box005|Take 001|BaseLayer|Box012|Box005|Take 001|
+  - first:
+      74: -8609718573619384955
+    second: Box002|Box012|Box012|Box006|Take 001|BaseLayer|Box012|Box006|Take 001|
+  - first:
+      74: -2452157129295527353
+    second: Box002|Box012|Box012|Box008|Take 001|BaseLayer|Box012|Box008|Take 001|
+  - first:
+      74: -365381693625895772
+    second: Box002|Box012|Box012|Box010|Take 001|BaseLayer|Box012|Box010|Take 001|
+  - first:
+      74: 3854763258457250250
+    second: Box002|Box012|Box012|Box011|Take 001|BaseLayer|Box012|Box011|Take 001|
+  - first:
+      74: 4909947668915222241
+    second: 'Box002|Box012|Box012|Box012|Take 001|BaseLayer|Box012|Box012|Take '
+  - first:
+      74: 3489033886723112015
+    second: Box002|Box012|Box012|Box012|Take 001|BaseLayer|Box012|Box012|Take 001|
+  - first:
+      74: 2543278312440731695
+    second: 'Box002|Box012|Box012|Box017|Take 001|BaseLayer|Box012|Box017|Take '
+  - first:
+      74: -6264702041262974179
+    second: Box002|Box012|Box012|Box017|Take 001|BaseLayer|Box012|Box017|Take 001|
+  - first:
+      74: 5633392621561849506
+    second: 'Box002|Box012|Box012|Box018|Take 001|BaseLayer|Box012|Box018|Take '
+  - first:
+      74: 3216438146952767582
+    second: Box002|Box012|Box012|Box018|Take 001|BaseLayer|Box012|Box018|Take 001|
+  - first:
+      74: -4707513365442369904
+    second: Box002|Box012|Box012|Box019|Take 001|BaseLayer|Box012|Box019|Take 001|
+  - first:
+      74: -3802041668276271906
+    second: 'Box002|Box012|Box012|Box020|Take 001|BaseLayer|Box012|Box020|Take '
+  - first:
+      74: 2102316474113985599
+    second: Box002|Box012|Box012|Box020|Take 001|BaseLayer|Box012|Box020|Take 001|
+  - first:
+      74: -3196131656184388008
+    second: Box002|Box012|Box012|Box021|Take 001|BaseLayer|Box012|Box021|Take 001|
+  - first:
+      74: 8293698118575417536
+    second: Box002|Box012|Box012|Box022|Take 001|BaseLayer|Box012|Box022|Take 001|
+  - first:
+      74: 5120789073850606876
+    second: Box002|Box012|Box012|Box023|Take 001|BaseLayer|Box012|Box023|Take 001|
+  - first:
+      74: 8662164192525898780
+    second: Box002|Box012|Box012|Box024|Take 001|BaseLayer|Box012|Box024|Take 001|
+  - first:
+      74: 4654720760568100153
+    second: Box002|Box012|Box012|Box025|Take 001|BaseLayer|Box012|Box025|Take 001|
+  - first:
+      74: -5941834589931516782
+    second: Box002|Box012|Box012|Box026|Take 001|BaseLayer|Box012|Box026|Take 001|
+  - first:
+      74: -776076095922494693
+    second: Box002|Box012|Box012|Box027|Take 001|BaseLayer|Box012|Box027|Take 001|
+  - first:
+      74: 3448490261661898921
+    second: Box002|Box012|Box012|Box028|Take 001|BaseLayer|Box012|Box028|Take 001|
+  - first:
+      74: 6816403801132972647
+    second: Box002|Box012|Box012|Camera001.Target|Take 001|BaseLayer|Box012|Ca
+  - first:
+      74: -2964328335967559992
+    second: Box002|Box012|Box012|Camera001.Target|Take 001|BaseLayer|Box012|Camera
+  - first:
+      74: 5996241161956775705
+    second: Box002|Box012|Box012|Camera001|Take 001|BaseLayer|Box012|Camera001
+  - first:
+      74: 846660849781858927
+    second: Box002|Box012|Box012|Camera001|Take 001|BaseLayer|Box012|Camera001|Tak
+  - first:
+      74: 7237529791976981370
+    second: Box002|Box012|Box012|VRayLight001|Take 001|BaseLayer|Box012|VRayLi
+  - first:
+      74: 4588368129596780637
+    second: Box002|Box012|Box012|VRayLight001|Take 001|BaseLayer|Box012|VRayLight0
+  - first:
+      74: -3995519635265325589
+    second: Box002|Box017|Box017|Box002|Take 001|BaseLayer|Box017|Box002|Take 001|
+  - first:
+      74: -7684085792880653733
+    second: Box002|Box017|Box017|Box004|Take 001|BaseLayer|Box017|Box004|Take 001|
+  - first:
+      74: -291965191404254720
+    second: 'Box002|Box017|Box017|Box005|Take 001|BaseLayer|Box017|Box005|Take '
+  - first:
+      74: -1578864253163149133
+    second: Box002|Box017|Box017|Box005|Take 001|BaseLayer|Box017|Box005|Take 001|
+  - first:
+      74: -7242985553739090552
+    second: Box002|Box017|Box017|Box006|Take 001|BaseLayer|Box017|Box006|Take 001|
+  - first:
+      74: -4291422576154436817
+    second: Box002|Box017|Box017|Box008|Take 001|BaseLayer|Box017|Box008|Take 001|
+  - first:
+      74: 5952435913768556295
+    second: Box002|Box017|Box017|Box010|Take 001|BaseLayer|Box017|Box010|Take 001|
+  - first:
+      74: 656130920901962749
+    second: Box002|Box017|Box017|Box011|Take 001|BaseLayer|Box017|Box011|Take 001|
+  - first:
+      74: 8805142492711952732
+    second: 'Box002|Box017|Box017|Box012|Take 001|BaseLayer|Box017|Box012|Take '
+  - first:
+      74: -245305504583091385
+    second: Box002|Box017|Box017|Box012|Take 001|BaseLayer|Box017|Box012|Take 001|
+  - first:
+      74: 286032509428656874
+    second: 'Box002|Box017|Box017|Box017|Take 001|BaseLayer|Box017|Box017|Take '
+  - first:
+      74: -1796719310974781593
+    second: Box002|Box017|Box017|Box017|Take 001|BaseLayer|Box017|Box017|Take 001|
+  - first:
+      74: 1395558838947835255
+    second: 'Box002|Box017|Box017|Box018|Take 001|BaseLayer|Box017|Box018|Take '
+  - first:
+      74: -7265023774599926045
+    second: Box002|Box017|Box017|Box018|Take 001|BaseLayer|Box017|Box018|Take 001|
+  - first:
+      74: 5969428706070866656
+    second: Box002|Box017|Box017|Box019|Take 001|BaseLayer|Box017|Box019|Take 001|
+  - first:
+      74: -1802485409945291348
+    second: 'Box002|Box017|Box017|Box020|Take 001|BaseLayer|Box017|Box020|Take '
+  - first:
+      74: -7575377076619669108
+    second: Box002|Box017|Box017|Box020|Take 001|BaseLayer|Box017|Box020|Take 001|
+  - first:
+      74: -7605856734985975147
+    second: Box002|Box017|Box017|Box021|Take 001|BaseLayer|Box017|Box021|Take 001|
+  - first:
+      74: -6301965986572035031
+    second: Box002|Box017|Box017|Box022|Take 001|BaseLayer|Box017|Box022|Take 001|
+  - first:
+      74: 1941514689865017404
+    second: Box002|Box017|Box017|Box023|Take 001|BaseLayer|Box017|Box023|Take 001|
+  - first:
+      74: 8727191356596395940
+    second: Box002|Box017|Box017|Box024|Take 001|BaseLayer|Box017|Box024|Take 001|
+  - first:
+      74: 7605332677793503604
+    second: Box002|Box017|Box017|Box025|Take 001|BaseLayer|Box017|Box025|Take 001|
+  - first:
+      74: -7584367493991253588
+    second: Box002|Box017|Box017|Box026|Take 001|BaseLayer|Box017|Box026|Take 001|
+  - first:
+      74: 2305793159831674272
+    second: Box002|Box017|Box017|Box027|Take 001|BaseLayer|Box017|Box027|Take 001|
+  - first:
+      74: -1221785962128724700
+    second: Box002|Box017|Box017|Box028|Take 001|BaseLayer|Box017|Box028|Take 001|
+  - first:
+      74: -4629550501304391066
+    second: Box002|Box017|Box017|Camera001.Target|Take 001|BaseLayer|Box017|Ca
+  - first:
+      74: 3907375119502581601
+    second: Box002|Box017|Box017|Camera001.Target|Take 001|BaseLayer|Box017|Camera
+  - first:
+      74: -7678038851586209665
+    second: Box002|Box017|Box017|Camera001|Take 001|BaseLayer|Box017|Camera001
+  - first:
+      74: 1791438392373097272
+    second: Box002|Box017|Box017|Camera001|Take 001|BaseLayer|Box017|Camera001|Tak
+  - first:
+      74: -3816376265527282424
+    second: Box002|Box017|Box017|VRayLight001|Take 001|BaseLayer|Box017|VRayLi
+  - first:
+      74: -5430783712672211254
+    second: Box002|Box017|Box017|VRayLight001|Take 001|BaseLayer|Box017|VRayLight0
+  - first:
+      74: 5163191999019033147
+    second: Box002|Box018|Box018|Box002|Take 001|BaseLayer|Box018|Box002|Take 001|
+  - first:
+      74: -6129615323504283440
+    second: Box002|Box018|Box018|Box004|Take 001|BaseLayer|Box018|Box004|Take 001|
+  - first:
+      74: -7434589561088022402
+    second: 'Box002|Box018|Box018|Box005|Take 001|BaseLayer|Box018|Box005|Take '
+  - first:
+      74: -6366756566860870925
+    second: Box002|Box018|Box018|Box005|Take 001|BaseLayer|Box018|Box005|Take 001|
+  - first:
+      74: -367970703301782678
+    second: Box002|Box018|Box018|Box006|Take 001|BaseLayer|Box018|Box006|Take 001|
+  - first:
+      74: -8687202725537688891
+    second: Box002|Box018|Box018|Box008|Take 001|BaseLayer|Box018|Box008|Take 001|
+  - first:
+      74: -189871285350581108
+    second: Box002|Box018|Box018|Box010|Take 001|BaseLayer|Box018|Box010|Take 001|
+  - first:
+      74: -8381630118987187422
+    second: Box002|Box018|Box018|Box011|Take 001|BaseLayer|Box018|Box011|Take 001|
+  - first:
+      74: -2325120469063158585
+    second: 'Box002|Box018|Box018|Box012|Take 001|BaseLayer|Box018|Box012|Take '
+  - first:
+      74: -7402979561454971126
+    second: Box002|Box018|Box018|Box012|Take 001|BaseLayer|Box018|Box012|Take 001|
+  - first:
+      74: 7623232885087612540
+    second: 'Box002|Box018|Box018|Box017|Take 001|BaseLayer|Box018|Box017|Take '
+  - first:
+      74: 502630382848046075
+    second: Box002|Box018|Box018|Box017|Take 001|BaseLayer|Box018|Box017|Take 001|
+  - first:
+      74: 1899460880601109891
+    second: 'Box002|Box018|Box018|Box018|Take 001|BaseLayer|Box018|Box018|Take '
+  - first:
+      74: 3412095397232703521
+    second: Box002|Box018|Box018|Box018|Take 001|BaseLayer|Box018|Box018|Take 001|
+  - first:
+      74: 1707524296100459283
+    second: Box002|Box018|Box018|Box019|Take 001|BaseLayer|Box018|Box019|Take 001|
+  - first:
+      74: 7573617494487720934
+    second: 'Box002|Box018|Box018|Box020|Take 001|BaseLayer|Box018|Box020|Take '
+  - first:
+      74: -732959653218741895
+    second: Box002|Box018|Box018|Box020|Take 001|BaseLayer|Box018|Box020|Take 001|
+  - first:
+      74: 3642063317170659476
+    second: Box002|Box018|Box018|Box021|Take 001|BaseLayer|Box018|Box021|Take 001|
+  - first:
+      74: -7648353948380949559
+    second: Box002|Box018|Box018|Box022|Take 001|BaseLayer|Box018|Box022|Take 001|
+  - first:
+      74: -520546856103373349
+    second: Box002|Box018|Box018|Box023|Take 001|BaseLayer|Box018|Box023|Take 001|
+  - first:
+      74: 7632541629457621654
+    second: Box002|Box018|Box018|Box024|Take 001|BaseLayer|Box018|Box024|Take 001|
+  - first:
+      74: 8374067234192938557
+    second: Box002|Box018|Box018|Box025|Take 001|BaseLayer|Box018|Box025|Take 001|
+  - first:
+      74: 28800532565454236
+    second: Box002|Box018|Box018|Box026|Take 001|BaseLayer|Box018|Box026|Take 001|
+  - first:
+      74: -7260536175613899679
+    second: Box002|Box018|Box018|Box027|Take 001|BaseLayer|Box018|Box027|Take 001|
+  - first:
+      74: -5161986600495565200
+    second: Box002|Box018|Box018|Box028|Take 001|BaseLayer|Box018|Box028|Take 001|
+  - first:
+      74: -6075010123711854352
+    second: Box002|Box018|Box018|Camera001.Target|Take 001|BaseLayer|Box018|Ca
+  - first:
+      74: -2710184811919018848
+    second: Box002|Box018|Box018|Camera001.Target|Take 001|BaseLayer|Box018|Camera
+  - first:
+      74: 416865153414936510
+    second: Box002|Box018|Box018|Camera001|Take 001|BaseLayer|Box018|Camera001
+  - first:
+      74: -9021084271991044540
+    second: Box002|Box018|Box018|Camera001|Take 001|BaseLayer|Box018|Camera001|Tak
+  - first:
+      74: -6178967949091763839
+    second: Box002|Box018|Box018|VRayLight001|Take 001|BaseLayer|Box018|VRayLi
+  - first:
+      74: -6170414123322925331
+    second: Box002|Box018|Box018|VRayLight001|Take 001|BaseLayer|Box018|VRayLight0
+  - first:
+      74: -3710405819767139414
+    second: Box002|Box019|Box019|Box002|Take 001|BaseLayer|Box019|Box002|Take 001|
+  - first:
+      74: 7532022946104939974
+    second: Box002|Box019|Box019|Box005|Take 001|BaseLayer|Box019|Box005|Take 001|
+  - first:
+      74: 2906104627056328527
+    second: Box002|Box019|Box019|Box006|Take 001|BaseLayer|Box019|Box006|Take 001|
+  - first:
+      74: 5856758201729952902
+    second: Box002|Box019|Box019|Box010|Take 001|BaseLayer|Box019|Box010|Take 001|
+  - first:
+      74: 5754634354783533417
+    second: Box002|Box019|Box019|Box012|Take 001|BaseLayer|Box019|Box012|Take 001|
+  - first:
+      74: 3998404084285017010
+    second: Box002|Box019|Box019|Box017|Take 001|BaseLayer|Box019|Box017|Take 001|
+  - first:
+      74: 79503536999204479
+    second: Box002|Box019|Box019|Box018|Take 001|BaseLayer|Box019|Box018|Take 001|
+  - first:
+      74: 823745805141497678
+    second: Box002|Box019|Box019|Box019|Take 001|BaseLayer|Box019|Box019|Take 001|
+  - first:
+      74: -698397650665938206
+    second: Box002|Box019|Box019|Box020|Take 001|BaseLayer|Box019|Box020|Take 001|
+  - first:
+      74: -2191403680947626651
+    second: Box002|Box019|Box019|Box021|Take 001|BaseLayer|Box019|Box021|Take 001|
+  - first:
+      74: 5582326766885360263
+    second: Box002|Box019|Box019|Camera001.Target|Take 001|BaseLayer|Box019|Camera
+  - first:
+      74: -6890697815676595948
+    second: Box002|Box019|Box019|Camera001|Take 001|BaseLayer|Box019|Camera001|Tak
+  - first:
+      74: -6268918350185022431
+    second: Box002|Box019|Box019|VRayLight001|Take 001|BaseLayer|Box019|VRayLight0
+  - first:
+      74: 8295692902963270445
+    second: Box002|Box020|Box020|Box002|Take 001|BaseLayer|Box020|Box002|Take 001|
+  - first:
+      74: -4265716731430292687
+    second: Box002|Box020|Box020|Box004|Take 001|BaseLayer|Box020|Box004|Take 001|
+  - first:
+      74: 6683693959702231398
+    second: 'Box002|Box020|Box020|Box005|Take 001|BaseLayer|Box020|Box005|Take '
+  - first:
+      74: -8361884939275123418
+    second: Box002|Box020|Box020|Box005|Take 001|BaseLayer|Box020|Box005|Take 001|
+  - first:
+      74: -8056373648677262459
+    second: Box002|Box020|Box020|Box006|Take 001|BaseLayer|Box020|Box006|Take 001|
+  - first:
+      74: -9175051568045968317
+    second: Box002|Box020|Box020|Box008|Take 001|BaseLayer|Box020|Box008|Take 001|
+  - first:
+      74: 88831272107257877
+    second: Box002|Box020|Box020|Box010|Take 001|BaseLayer|Box020|Box010|Take 001|
+  - first:
+      74: -4011237050659716142
+    second: Box002|Box020|Box020|Box011|Take 001|BaseLayer|Box020|Box011|Take 001|
+  - first:
+      74: 2868875555284945252
+    second: 'Box002|Box020|Box020|Box012|Take 001|BaseLayer|Box020|Box012|Take '
+  - first:
+      74: 2438066725473804655
+    second: Box002|Box020|Box020|Box012|Take 001|BaseLayer|Box020|Box012|Take 001|
+  - first:
+      74: -627681303135724338
+    second: 'Box002|Box020|Box020|Box017|Take 001|BaseLayer|Box020|Box017|Take '
+  - first:
+      74: 8393709351098703305
+    second: Box002|Box020|Box020|Box017|Take 001|BaseLayer|Box020|Box017|Take 001|
+  - first:
+      74: 5591346224518829386
+    second: 'Box002|Box020|Box020|Box018|Take 001|BaseLayer|Box020|Box018|Take '
+  - first:
+      74: 6724044257151728709
+    second: Box002|Box020|Box020|Box018|Take 001|BaseLayer|Box020|Box018|Take 001|
+  - first:
+      74: 6754589459020752811
+    second: Box002|Box020|Box020|Box019|Take 001|BaseLayer|Box020|Box019|Take 001|
+  - first:
+      74: -5859368642890057229
+    second: 'Box002|Box020|Box020|Box020|Take 001|BaseLayer|Box020|Box020|Take '
+  - first:
+      74: -3760031713507478896
+    second: Box002|Box020|Box020|Box020|Take 001|BaseLayer|Box020|Box020|Take 001|
+  - first:
+      74: 7063622044793151045
+    second: Box002|Box020|Box020|Box021|Take 001|BaseLayer|Box020|Box021|Take 001|
+  - first:
+      74: -5617837718642776525
+    second: Box002|Box020|Box020|Box022|Take 001|BaseLayer|Box020|Box022|Take 001|
+  - first:
+      74: -7174926561342822122
+    second: Box002|Box020|Box020|Box023|Take 001|BaseLayer|Box020|Box023|Take 001|
+  - first:
+      74: 47069608663187833
+    second: Box002|Box020|Box020|Box024|Take 001|BaseLayer|Box020|Box024|Take 001|
+  - first:
+      74: 2461731929407009995
+    second: Box002|Box020|Box020|Box025|Take 001|BaseLayer|Box020|Box025|Take 001|
+  - first:
+      74: 4469259678447809662
+    second: Box002|Box020|Box020|Box026|Take 001|BaseLayer|Box020|Box026|Take 001|
+  - first:
+      74: -4253642306732071903
+    second: Box002|Box020|Box020|Box027|Take 001|BaseLayer|Box020|Box027|Take 001|
+  - first:
+      74: 3615986834227289030
+    second: Box002|Box020|Box020|Box028|Take 001|BaseLayer|Box020|Box028|Take 001|
+  - first:
+      74: 8375424660143246660
+    second: Box002|Box020|Box020|Camera001.Target|Take 001|BaseLayer|Box020|Ca
+  - first:
+      74: 2362848617683190176
+    second: Box002|Box020|Box020|Camera001.Target|Take 001|BaseLayer|Box020|Camera
+  - first:
+      74: -4197277236378639483
+    second: Box002|Box020|Box020|Camera001|Take 001|BaseLayer|Box020|Camera001
+  - first:
+      74: 8822203922065008984
+    second: Box002|Box020|Box020|Camera001|Take 001|BaseLayer|Box020|Camera001|Tak
+  - first:
+      74: -5994218554340115460
+    second: Box002|Box020|Box020|VRayLight001|Take 001|BaseLayer|Box020|VRayLi
+  - first:
+      74: 2471342065656901881
+    second: Box002|Box020|Box020|VRayLight001|Take 001|BaseLayer|Box020|VRayLight0
+  - first:
+      74: -3386076199842010912
+    second: Box002|Box022|Box022|Box004|Take 001|BaseLayer|Box022|Box004|Take 001|
+  - first:
+      74: -259859866947290092
+    second: Box002|Box022|Box022|Box005|Take 001|BaseLayer|Box022|Box005|Take 001|
+  - first:
+      74: 4038067894081694066
+    second: Box002|Box022|Box022|Box008|Take 001|BaseLayer|Box022|Box008|Take 001|
+  - first:
+      74: 2652412045737945011
+    second: Box002|Box022|Box022|Box011|Take 001|BaseLayer|Box022|Box011|Take 001|
+  - first:
+      74: -6064869681125936035
+    second: Box002|Box022|Box022|Box012|Take 001|BaseLayer|Box022|Box012|Take 001|
+  - first:
+      74: 2904192851563949551
+    second: Box002|Box022|Box022|Box017|Take 001|BaseLayer|Box022|Box017|Take 001|
+  - first:
+      74: 6622775520802325408
+    second: Box002|Box022|Box022|Box018|Take 001|BaseLayer|Box022|Box018|Take 001|
+  - first:
+      74: -2065464979589644107
+    second: Box002|Box022|Box022|Box020|Take 001|BaseLayer|Box022|Box020|Take 001|
+  - first:
+      74: 7148100927493723033
+    second: Box002|Box022|Box022|Box022|Take 001|BaseLayer|Box022|Box022|Take 001|
+  - first:
+      74: 4792991811194336488
+    second: Box002|Box022|Box022|Box023|Take 001|BaseLayer|Box022|Box023|Take 001|
+  - first:
+      74: -1248465570602844331
+    second: Box002|Box022|Box022|Box024|Take 001|BaseLayer|Box022|Box024|Take 001|
+  - first:
+      74: 6468111112714309299
+    second: Box002|Box022|Box022|Box025|Take 001|BaseLayer|Box022|Box025|Take 001|
+  - first:
+      74: -4781893474487364165
+    second: Box002|Box022|Box022|Box026|Take 001|BaseLayer|Box022|Box026|Take 001|
+  - first:
+      74: 4086588753817068051
+    second: Box002|Box022|Box022|Box027|Take 001|BaseLayer|Box022|Box027|Take 001|
+  - first:
+      74: -4526122855340470074
+    second: Box002|Box022|Box022|Box028|Take 001|BaseLayer|Box022|Box028|Take 001|
+  - first:
+      74: 2541830350268885938
+    second: Box002|Box022|Box022|Camera001.Target|Take 001|BaseLayer|Box022|Camera
+  - first:
+      74: 7671777970534387864
+    second: Box002|Box022|Box022|Camera001|Take 001|BaseLayer|Box022|Camera001|Tak
+  - first:
+      74: 4267268748298777459
+    second: Box002|Box022|Box022|VRayLight001|Take 001|BaseLayer|Box022|VRayLight0
+  - first:
+      74: 7887924304289148820
+    second: Box002|Box023|Box023|Box004|Take 001|BaseLayer|Box023|Box004|Take 001|
+  - first:
+      74: -2190222412382185207
+    second: Box002|Box023|Box023|Box005|Take 001|BaseLayer|Box023|Box005|Take 001|
+  - first:
+      74: 365683170089363876
+    second: Box002|Box023|Box023|Box008|Take 001|BaseLayer|Box023|Box008|Take 001|
+  - first:
+      74: 7116548685912812974
+    second: Box002|Box023|Box023|Box011|Take 001|BaseLayer|Box023|Box011|Take 001|
+  - first:
+      74: -5479785120555369264
+    second: Box002|Box023|Box023|Box012|Take 001|BaseLayer|Box023|Box012|Take 001|
+  - first:
+      74: 5144181698509043311
+    second: Box002|Box023|Box023|Box017|Take 001|BaseLayer|Box023|Box017|Take 001|
+  - first:
+      74: -1485443829947314549
+    second: Box002|Box023|Box023|Box018|Take 001|BaseLayer|Box023|Box018|Take 001|
+  - first:
+      74: 3346952168184617657
+    second: Box002|Box023|Box023|Box020|Take 001|BaseLayer|Box023|Box020|Take 001|
+  - first:
+      74: -2392741406709709019
+    second: Box002|Box023|Box023|Box022|Take 001|BaseLayer|Box023|Box022|Take 001|
+  - first:
+      74: -3125208237841869575
+    second: Box002|Box023|Box023|Box023|Take 001|BaseLayer|Box023|Box023|Take 001|
+  - first:
+      74: -5839128208061602876
+    second: Box002|Box023|Box023|Box024|Take 001|BaseLayer|Box023|Box024|Take 001|
+  - first:
+      74: -4861949190098767538
+    second: Box002|Box023|Box023|Box025|Take 001|BaseLayer|Box023|Box025|Take 001|
+  - first:
+      74: -4904272017846469237
+    second: Box002|Box023|Box023|Box026|Take 001|BaseLayer|Box023|Box026|Take 001|
+  - first:
+      74: -5176904070128694853
+    second: Box002|Box023|Box023|Box027|Take 001|BaseLayer|Box023|Box027|Take 001|
+  - first:
+      74: -6286901186320955649
+    second: Box002|Box023|Box023|Box028|Take 001|BaseLayer|Box023|Box028|Take 001|
+  - first:
+      74: -4548521977624537102
+    second: Box002|Box023|Box023|Camera001.Target|Take 001|BaseLayer|Box023|Camera
+  - first:
+      74: -8814027515486680078
+    second: Box002|Box023|Box023|Camera001|Take 001|BaseLayer|Box023|Camera001|Tak
+  - first:
+      74: -3932277610298915402
+    second: Box002|Box023|Box023|VRayLight001|Take 001|BaseLayer|Box023|VRayLight0
+  - first:
+      74: 354541883623092181
+    second: Box002|Box024|Box024|Box004|Take 001|BaseLayer|Box024|Box004|Take 001|
+  - first:
+      74: 6126531417155894378
+    second: Box002|Box024|Box024|Box005|Take 001|BaseLayer|Box024|Box005|Take 001|
+  - first:
+      74: -3946338393799903248
+    second: Box002|Box024|Box024|Box008|Take 001|BaseLayer|Box024|Box008|Take 001|
+  - first:
+      74: -8792390322917536505
+    second: Box002|Box024|Box024|Box011|Take 001|BaseLayer|Box024|Box011|Take 001|
+  - first:
+      74: 3361401380765538803
+    second: Box002|Box024|Box024|Box012|Take 001|BaseLayer|Box024|Box012|Take 001|
+  - first:
+      74: 7219958260834451540
+    second: Box002|Box024|Box024|Box017|Take 001|BaseLayer|Box024|Box017|Take 001|
+  - first:
+      74: 1028288265729436889
+    second: Box002|Box024|Box024|Box018|Take 001|BaseLayer|Box024|Box018|Take 001|
+  - first:
+      74: -107958271371233442
+    second: Box002|Box024|Box024|Box020|Take 001|BaseLayer|Box024|Box020|Take 001|
+  - first:
+      74: -8883054380467202360
+    second: Box002|Box024|Box024|Box022|Take 001|BaseLayer|Box024|Box022|Take 001|
+  - first:
+      74: -5542546537345673473
+    second: Box002|Box024|Box024|Box023|Take 001|BaseLayer|Box024|Box023|Take 001|
+  - first:
+      74: 3395368602209795931
+    second: Box002|Box024|Box024|Box024|Take 001|BaseLayer|Box024|Box024|Take 001|
+  - first:
+      74: -6729617137830539319
+    second: Box002|Box024|Box024|Box025|Take 001|BaseLayer|Box024|Box025|Take 001|
+  - first:
+      74: -894160864043152968
+    second: Box002|Box024|Box024|Box026|Take 001|BaseLayer|Box024|Box026|Take 001|
+  - first:
+      74: -4219733531207983046
+    second: Box002|Box024|Box024|Box027|Take 001|BaseLayer|Box024|Box027|Take 001|
+  - first:
+      74: 5593336587281100152
+    second: Box002|Box024|Box024|Box028|Take 001|BaseLayer|Box024|Box028|Take 001|
+  - first:
+      74: 3244038118294805381
+    second: Box002|Box024|Box024|Camera001.Target|Take 001|BaseLayer|Box024|Camera
+  - first:
+      74: 8190399279647493841
+    second: Box002|Box024|Box024|Camera001|Take 001|BaseLayer|Box024|Camera001|Tak
+  - first:
+      74: -20897777389842097
+    second: Box002|Box024|Box024|VRayLight001|Take 001|BaseLayer|Box024|VRayLight0
+  - first:
+      74: 8626913193838369233
+    second: Box002|Box025|Box025|Box004|Take 001|BaseLayer|Box025|Box004|Take 001|
+  - first:
+      74: -6495174725710922557
+    second: Box002|Box025|Box025|Box005|Take 001|BaseLayer|Box025|Box005|Take 001|
+  - first:
+      74: -7932949741965104646
+    second: Box002|Box025|Box025|Box008|Take 001|BaseLayer|Box025|Box008|Take 001|
+  - first:
+      74: 1324745183731078282
+    second: Box002|Box025|Box025|Box011|Take 001|BaseLayer|Box025|Box011|Take 001|
+  - first:
+      74: -4106956749995501952
+    second: Box002|Box025|Box025|Box012|Take 001|BaseLayer|Box025|Box012|Take 001|
+  - first:
+      74: -4241978794520989866
+    second: Box002|Box025|Box025|Box017|Take 001|BaseLayer|Box025|Box017|Take 001|
+  - first:
+      74: 4945283842536493478
+    second: Box002|Box025|Box025|Box018|Take 001|BaseLayer|Box025|Box018|Take 001|
+  - first:
+      74: -1563140937998712383
+    second: Box002|Box025|Box025|Box020|Take 001|BaseLayer|Box025|Box020|Take 001|
+  - first:
+      74: 5838615402773823811
+    second: Box002|Box025|Box025|Box022|Take 001|BaseLayer|Box025|Box022|Take 001|
+  - first:
+      74: -4873371127744085164
+    second: Box002|Box025|Box025|Box023|Take 001|BaseLayer|Box025|Box023|Take 001|
+  - first:
+      74: -7593580933645981144
+    second: Box002|Box025|Box025|Box024|Take 001|BaseLayer|Box025|Box024|Take 001|
+  - first:
+      74: 8573305180338327325
+    second: Box002|Box025|Box025|Box025|Take 001|BaseLayer|Box025|Box025|Take 001|
+  - first:
+      74: 7415247104124564911
+    second: Box002|Box025|Box025|Box026|Take 001|BaseLayer|Box025|Box026|Take 001|
+  - first:
+      74: -4734918305398548914
+    second: Box002|Box025|Box025|Box027|Take 001|BaseLayer|Box025|Box027|Take 001|
+  - first:
+      74: -4771579921269715474
+    second: Box002|Box025|Box025|Box028|Take 001|BaseLayer|Box025|Box028|Take 001|
+  - first:
+      74: -2711548388149242793
+    second: Box002|Box025|Box025|Camera001.Target|Take 001|BaseLayer|Box025|Camera
+  - first:
+      74: 4779001094533240884
+    second: Box002|Box025|Box025|Camera001|Take 001|BaseLayer|Box025|Camera001|Tak
+  - first:
+      74: 3887007501802292572
+    second: Box002|Box025|Box025|VRayLight001|Take 001|BaseLayer|Box025|VRayLight0
+  - first:
+      74: 2144056076483059945
+    second: Box002|Box026|Box026|Box004|Take 001|BaseLayer|Box026|Box004|Take 001|
+  - first:
+      74: 9178426623493953336
+    second: Box002|Box026|Box026|Box005|Take 001|BaseLayer|Box026|Box005|Take 001|
+  - first:
+      74: -4738447637675835857
+    second: Box002|Box026|Box026|Box008|Take 001|BaseLayer|Box026|Box008|Take 001|
+  - first:
+      74: -2827797238020820648
+    second: Box002|Box026|Box026|Box011|Take 001|BaseLayer|Box026|Box011|Take 001|
+  - first:
+      74: 6298735505620571565
+    second: Box002|Box026|Box026|Box012|Take 001|BaseLayer|Box026|Box012|Take 001|
+  - first:
+      74: -633674536209890473
+    second: Box002|Box026|Box026|Box017|Take 001|BaseLayer|Box026|Box017|Take 001|
+  - first:
+      74: -2453562481576026239
+    second: Box002|Box026|Box026|Box018|Take 001|BaseLayer|Box026|Box018|Take 001|
+  - first:
+      74: 364257815673710864
+    second: Box002|Box026|Box026|Box020|Take 001|BaseLayer|Box026|Box020|Take 001|
+  - first:
+      74: 8895507737123478888
+    second: Box002|Box026|Box026|Box022|Take 001|BaseLayer|Box026|Box022|Take 001|
+  - first:
+      74: -7066070895720641139
+    second: Box002|Box026|Box026|Box023|Take 001|BaseLayer|Box026|Box023|Take 001|
+  - first:
+      74: -8155780649714954560
+    second: Box002|Box026|Box026|Box024|Take 001|BaseLayer|Box026|Box024|Take 001|
+  - first:
+      74: 7666690062547903477
+    second: Box002|Box026|Box026|Box025|Take 001|BaseLayer|Box026|Box025|Take 001|
+  - first:
+      74: -6156977477498488367
+    second: Box002|Box026|Box026|Box026|Take 001|BaseLayer|Box026|Box026|Take 001|
+  - first:
+      74: -8085291813722721072
+    second: Box002|Box026|Box026|Box027|Take 001|BaseLayer|Box026|Box027|Take 001|
+  - first:
+      74: 8842230624020541981
+    second: Box002|Box026|Box026|Box028|Take 001|BaseLayer|Box026|Box028|Take 001|
+  - first:
+      74: 3271072997781951045
+    second: Box002|Box026|Box026|Camera001.Target|Take 001|BaseLayer|Box026|Camera
+  - first:
+      74: -465656660059988321
+    second: Box002|Box026|Box026|Camera001|Take 001|BaseLayer|Box026|Camera001|Tak
+  - first:
+      74: -7748773466907535732
+    second: Box002|Box026|Box026|VRayLight001|Take 001|BaseLayer|Box026|VRayLight0
+  - first:
+      74: -7035964306069575720
+    second: Box002|Box027|Box027|Box004|Take 001|BaseLayer|Box027|Box004|Take 001|
+  - first:
+      74: -8341220319816274033
+    second: Box002|Box027|Box027|Box005|Take 001|BaseLayer|Box027|Box005|Take 001|
+  - first:
+      74: -6280362545386037410
+    second: Box002|Box027|Box027|Box008|Take 001|BaseLayer|Box027|Box008|Take 001|
+  - first:
+      74: -5949427681335786455
+    second: Box002|Box027|Box027|Box011|Take 001|BaseLayer|Box027|Box011|Take 001|
+  - first:
+      74: 2378621474012667091
+    second: Box002|Box027|Box027|Box012|Take 001|BaseLayer|Box027|Box012|Take 001|
+  - first:
+      74: 1492743922408446243
+    second: Box002|Box027|Box027|Box017|Take 001|BaseLayer|Box027|Box017|Take 001|
+  - first:
+      74: -7875423472901549721
+    second: Box002|Box027|Box027|Box018|Take 001|BaseLayer|Box027|Box018|Take 001|
+  - first:
+      74: 5578087320228500124
+    second: Box002|Box027|Box027|Box020|Take 001|BaseLayer|Box027|Box020|Take 001|
+  - first:
+      74: -5358817044576917680
+    second: Box002|Box027|Box027|Box022|Take 001|BaseLayer|Box027|Box022|Take 001|
+  - first:
+      74: -3184115021050998121
+    second: Box002|Box027|Box027|Box023|Take 001|BaseLayer|Box027|Box023|Take 001|
+  - first:
+      74: 3267795270613884546
+    second: Box002|Box027|Box027|Box024|Take 001|BaseLayer|Box027|Box024|Take 001|
+  - first:
+      74: -982930629858043615
+    second: Box002|Box027|Box027|Box025|Take 001|BaseLayer|Box027|Box025|Take 001|
+  - first:
+      74: 6505840333427362820
+    second: Box002|Box027|Box027|Box026|Take 001|BaseLayer|Box027|Box026|Take 001|
+  - first:
+      74: -6079395419083854302
+    second: Box002|Box027|Box027|Box027|Take 001|BaseLayer|Box027|Box027|Take 001|
+  - first:
+      74: 7811797681131660966
+    second: Box002|Box027|Box027|Box028|Take 001|BaseLayer|Box027|Box028|Take 001|
+  - first:
+      74: -3613799734442026339
+    second: Box002|Box027|Box027|Camera001.Target|Take 001|BaseLayer|Box027|Camera
+  - first:
+      74: -877202778136574442
+    second: Box002|Box027|Box027|Camera001|Take 001|BaseLayer|Box027|Camera001|Tak
+  - first:
+      74: -3666816592367107673
+    second: Box002|Box027|Box027|VRayLight001|Take 001|BaseLayer|Box027|VRayLight0
+  - first:
+      74: 2557442979326883957
+    second: Box002|Cole_Armchair_Fabric|Cole_Armchair_Fabric|Cole_Armchair_Fab
+  - first:
+      74: 8231470037098586500
+    second: Box002|Cole_Armchair_Fabric|Cole_Armchair_Fabric|Cole_Armchair_Fabric|
+  - first:
+      74: -9217555430386937620
+    second: Box002|Cole_Armchair_Fabric|Cole_Armchair_Fabric|Cole_Armchair_Lea
+  - first:
+      74: 2690647480119470164
+    second: Box002|Cole_Armchair_Fabric|Cole_Armchair_Fabric|Cole_Armchair_Leather
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

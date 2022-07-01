@@ -29,7 +29,7 @@ public class swipe : MonoBehaviour, IDragHandler, IEndDragHandler
         differenceY = data.pressPosition.y - data.position.y;
         if (Mathf.Abs((float)(differenceY)) > Mathf.Abs((float)(differenceX))&& moving!=2)
         {
-            r.sizeDelta = new Vector2(r.sizeDelta.x, (float)(r.sizeDelta.y - differenceY * 0.07));
+            r.sizeDelta = new Vector2(r.sizeDelta.x, (float)(r.sizeDelta.y - differenceY * 0.09));
             moveUp = true;
             moving = 1;
         }
@@ -47,7 +47,7 @@ public class swipe : MonoBehaviour, IDragHandler, IEndDragHandler
         {
             if (r.sizeDelta.y <= 2500 && r.sizeDelta.y > 1700)
             {
-                r.sizeDelta = new Vector2(r.sizeDelta.x, (float)(r.sizeDelta.y - differenceY * 0.07));
+                r.sizeDelta = new Vector2(r.sizeDelta.x, (float)(r.sizeDelta.y - differenceY * 0.09));
 
             }
             else if ( r.sizeDelta.y <= 1700 && r.sizeDelta.y > 1200)
