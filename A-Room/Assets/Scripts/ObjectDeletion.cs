@@ -45,6 +45,8 @@ public class ObjectDeletion : MonoBehaviour
 
         foreach (GameObject furniture in furnitures)
         {
+            if(furniture.transform.childCount>0)
+                furniture.transform.GetChild(0).parent = null;
             Destroy(furniture);
         }
         numOfFurniture = 0;

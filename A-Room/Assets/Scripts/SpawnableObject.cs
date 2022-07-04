@@ -40,6 +40,7 @@ public class SpawnableObject : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         picked = false;
         spawnableObject = null;
+        Application.targetFrameRate = 30;
     }
 
     private void UpdatePlacementIndicator()
