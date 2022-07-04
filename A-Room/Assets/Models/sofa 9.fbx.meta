@@ -3,7 +3,37 @@ guid: c586adbe6ef8a654da92401996da7054
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.002
+    second: {fileID: 2100000, guid: c1e47571503a99c45ad063d3d0ebbeb3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.1.005
+    second: {fileID: 2100000, guid: c1e47571503a99c45ad063d3d0ebbeb3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.1.006
+    second: {fileID: 2100000, guid: c1e47571503a99c45ad063d3d0ebbeb3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.1.007
+    second: {fileID: 2100000, guid: c1e47571503a99c45ad063d3d0ebbeb3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.1.008
+    second: {fileID: 2100000, guid: c1e47571503a99c45ad063d3d0ebbeb3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: alpolish.001
+    second: {fileID: 2100000, guid: c1e47571503a99c45ad063d3d0ebbeb3, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

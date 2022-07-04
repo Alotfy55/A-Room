@@ -1539,7 +1539,22 @@ ModelImporter:
   - first:
       74: 632752740636525062
     second: Box018|Box018|Box018|Cole_Armchair_Fabric|Cole_Armchair_Fabric|Cole_A_
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chromed steel
+    second: {fileID: 2100000, guid: a645525aef907824588e16558cf1fd04, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Grey cloth
+    second: {fileID: 2100000, guid: a645525aef907824588e16558cf1fd04, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Light grey cloth
+    second: {fileID: 2100000, guid: a645525aef907824588e16558cf1fd04, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

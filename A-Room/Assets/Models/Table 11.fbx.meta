@@ -3,7 +3,32 @@ guid: cc6ecd96537577f42a647211bd12885f
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Beek_Collection_Bibi_120x120_mat1_mtl_1
+    second: {fileID: 2100000, guid: c60c1f6f56d1bb549ae9339f3b1a00a7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Beek_Collection_Bibi_120x120_mat1_mtl_2
+    second: {fileID: 2100000, guid: c60c1f6f56d1bb549ae9339f3b1a00a7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Beek_Collection_Bibi_120x120_mat1_mtl_3
+    second: {fileID: 2100000, guid: c60c1f6f56d1bb549ae9339f3b1a00a7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Beek_Collection_Bibi_120x120_mat1_mtl_4
+    second: {fileID: 2100000, guid: c60c1f6f56d1bb549ae9339f3b1a00a7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Beek_Collection_Bibi_120x120_mat1_mtl_5
+    second: {fileID: 2100000, guid: c60c1f6f56d1bb549ae9339f3b1a00a7, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
