@@ -3,7 +3,37 @@ guid: ad793a642e93d094890b3cc937122cbb
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BANTAL
+    second: {fileID: 2100000, guid: cfe71e4fbc24adf42890ce0e0d460902, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BLK
+    second: {fileID: 2100000, guid: 81ed5ea4c27859d4387ad610d9440c37, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GRD
+    second: {fileID: 2100000, guid: e77082345a3216445b178bf05ae706e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: KASUR
+    second: {fileID: 2100000, guid: 97dec1f208210a34c9270d40ceb2d85e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SELIMUT
+    second: {fileID: 2100000, guid: a5b1330b5261c984b8fafbb45d8d9691, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kasur 2
+    second: {fileID: 2100000, guid: 01837454baec8f74c92c79e2278d8b4f, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

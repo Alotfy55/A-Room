@@ -143,6 +143,7 @@ public class SpawnableObject : MonoBehaviour
 
         var leanTranslate = prefab.GetComponent<LeanDragTranslate>();
         var leanRotate = prefab.GetComponent<LeanTwistRotateAxis>();
+        var leanScale = prefab.GetComponent<LeanPinchScale>();
         var rigidBody = prefab.GetComponent<Rigidbody>();
         VerticalPositionCalc positionCalc = prefab.GetComponent<VerticalPositionCalc>();
 
@@ -160,6 +161,13 @@ public class SpawnableObject : MonoBehaviour
             ld.Use.RequiredFingerCount = 1;
             ld.Camera = GameObject.Find("AR Camera").GetComponent<Camera>();
             ld.Sensitivity = 2;
+        }
+        if (leanScale == null)
+        {
+            LeanPinchScale ls = prefab.AddComponent<LeanPinchScale>();
+            ls.Use.RequiredFingerCount = 2;
+            ls.Camera = GameObject.Find("AR Camera").GetComponent<Camera>();
+            ls.Sensitivity = 2;
         }
         if (leanRotate == null)
         {

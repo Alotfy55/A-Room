@@ -1938,7 +1938,32 @@ ModelImporter:
   - first:
       74: 6151837998416565300
     second: Sheet|Sheet|Sheet|Sheet|Take 001|BaseLayer|Sheet|Sheet|Take 001|BaseL
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BedBase
+    second: {fileID: 2100000, guid: 84f000c4eac2d20408a0a5dba4eb4881, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pillow
+    second: {fileID: 2100000, guid: 0ce7ca15cd93341beb67396a494cef55, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sheet
+    second: {fileID: 2100000, guid: c1e47571503a99c45ad063d3d0ebbeb3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sheet.001
+    second: {fileID: 2100000, guid: c1e47571503a99c45ad063d3d0ebbeb3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: UnderSheet
+    second: {fileID: 2100000, guid: b3540073dc380874796ddf91bb0805c6, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

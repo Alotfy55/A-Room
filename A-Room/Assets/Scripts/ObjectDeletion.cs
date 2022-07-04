@@ -23,9 +23,9 @@ public class ObjectDeletion : MonoBehaviour
 
     public void SwitchShowHide()
     {
-        Menus.transform.parent = parent_model;
+        Menus.transform.parent = this.transform;
         Menus.transform.gameObject.SetActive(true);
-        Menus.transform.localPosition = new Vector3(0f, parent_model.GetComponent<Renderer>().bounds.size.y + 0.3f, 0f);
+        Menus.transform.localPosition = new Vector3(0f, this.GetComponent<Renderer>().bounds.size.y / (float)this.gameObject.transform.localScale.y + 0.5f / (float)this.gameObject.transform.localScale.y, 0f);
 
     }
     public Transform getParent()

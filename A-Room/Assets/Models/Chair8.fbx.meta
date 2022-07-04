@@ -3,7 +3,12 @@ guid: aa158d0716d3c864c87df46e2e981265
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: KAUSTBY_Stool_IKEA_material
+    second: {fileID: 2100000, guid: 84f000c4eac2d20408a0a5dba4eb4881, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

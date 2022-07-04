@@ -3,7 +3,167 @@ guid: 7fadeef514834bb428c3a70e12914edc
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Birch
+    second: {fileID: 2100000, guid: de6fdd614e03ae14086c85ca0c1171e3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Birch.019
+    second: {fileID: 2100000, guid: 411ddb7724da068448d6e85208f35d81, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Birch.1
+    second: {fileID: 2100000, guid: b3540073dc380874796ddf91bb0805c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Birch.10
+    second: {fileID: 2100000, guid: 380f0c627bd173d4cbcf89f484d29a9a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Birch.11
+    second: {fileID: 2100000, guid: c1e47571503a99c45ad063d3d0ebbeb3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Birch.12
+    second: {fileID: 2100000, guid: 0d6cb76a4ea0eb547866b631f424c497, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Birch.13
+    second: {fileID: 2100000, guid: 84f000c4eac2d20408a0a5dba4eb4881, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Birch.14
+    second: {fileID: 2100000, guid: 84f000c4eac2d20408a0a5dba4eb4881, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Birch.15
+    second: {fileID: 2100000, guid: 84f000c4eac2d20408a0a5dba4eb4881, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Birch.16
+    second: {fileID: 2100000, guid: 84f000c4eac2d20408a0a5dba4eb4881, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Birch.17
+    second: {fileID: 2100000, guid: 84f000c4eac2d20408a0a5dba4eb4881, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Birch.18
+    second: {fileID: 2100000, guid: 84f000c4eac2d20408a0a5dba4eb4881, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Birch.2
+    second: {fileID: 2100000, guid: 84f000c4eac2d20408a0a5dba4eb4881, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Birch.20
+    second: {fileID: 2100000, guid: 84f000c4eac2d20408a0a5dba4eb4881, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Birch.23
+    second: {fileID: 2100000, guid: 84f000c4eac2d20408a0a5dba4eb4881, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Birch.25
+    second: {fileID: 2100000, guid: 84f000c4eac2d20408a0a5dba4eb4881, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Birch.26
+    second: {fileID: 2100000, guid: 84f000c4eac2d20408a0a5dba4eb4881, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Birch.28
+    second: {fileID: 2100000, guid: 84f000c4eac2d20408a0a5dba4eb4881, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Birch.3
+    second: {fileID: 2100000, guid: 84f000c4eac2d20408a0a5dba4eb4881, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Birch.31
+    second: {fileID: 2100000, guid: 84f000c4eac2d20408a0a5dba4eb4881, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Birch.4
+    second: {fileID: 2100000, guid: 84f000c4eac2d20408a0a5dba4eb4881, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Birch.5
+    second: {fileID: 2100000, guid: 84f000c4eac2d20408a0a5dba4eb4881, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Birch.6
+    second: {fileID: 2100000, guid: 84f000c4eac2d20408a0a5dba4eb4881, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Birch.7
+    second: {fileID: 2100000, guid: 84f000c4eac2d20408a0a5dba4eb4881, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Birch.8
+    second: {fileID: 2100000, guid: 84f000c4eac2d20408a0a5dba4eb4881, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Birch.9
+    second: {fileID: 2100000, guid: 84f000c4eac2d20408a0a5dba4eb4881, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fabric 12
+    second: {fileID: 2100000, guid: de6fdd614e03ae14086c85ca0c1171e3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fabric 12.5
+    second: {fileID: 2100000, guid: de6fdd614e03ae14086c85ca0c1171e3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.003
+    second: {fileID: 2100000, guid: c1e47571503a99c45ad063d3d0ebbeb3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.2.2
+    second: {fileID: 2100000, guid: c1e47571503a99c45ad063d3d0ebbeb3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.2.3
+    second: {fileID: 2100000, guid: c1e47571503a99c45ad063d3d0ebbeb3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.3
+    second: {fileID: 2100000, guid: c1e47571503a99c45ad063d3d0ebbeb3, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

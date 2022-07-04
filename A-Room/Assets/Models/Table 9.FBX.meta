@@ -8,38 +8,32 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material #10
-    second: {fileID: -8499701361930146817, guid: 9cd3dd3068a2d8f4285fbe77c46bc9b5,
-      type: 3}
+    second: {fileID: 2100000, guid: 84f000c4eac2d20408a0a5dba4eb4881, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material #12
-    second: {fileID: -8499701361930146817, guid: 9cd3dd3068a2d8f4285fbe77c46bc9b5,
-      type: 3}
+    second: {fileID: 2100000, guid: 84f000c4eac2d20408a0a5dba4eb4881, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material #13
-    second: {fileID: -8499701361930146817, guid: 9cd3dd3068a2d8f4285fbe77c46bc9b5,
-      type: 3}
+    second: {fileID: 2100000, guid: de6fdd614e03ae14086c85ca0c1171e3, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material #14
-    second: {fileID: -8499701361930146817, guid: 9cd3dd3068a2d8f4285fbe77c46bc9b5,
-      type: 3}
+    second: {fileID: 2100000, guid: 0ce7ca15cd93341beb67396a494cef55, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material #18
-    second: {fileID: -8499701361930146817, guid: 9cd3dd3068a2d8f4285fbe77c46bc9b5,
-      type: 3}
+    second: {fileID: 2100000, guid: 16050a265b187854ebba10a48cd9d2a5, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material #9
-    second: {fileID: -8499701361930146817, guid: 9cd3dd3068a2d8f4285fbe77c46bc9b5,
-      type: 3}
+    second: {fileID: 2100000, guid: 16050a265b187854ebba10a48cd9d2a5, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
