@@ -3,7 +3,37 @@ guid: b5641ea1c3c4ebb46ab360cd016e307e
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MisuraEmme_Bed_Fabric 01
+    second: {fileID: 2100000, guid: c1e47571503a99c45ad063d3d0ebbeb3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MisuraEmme_Bed_fabric #101
+    second: {fileID: 2100000, guid: 301f72cfb301690419a58bfc359fd1dd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MisuraEmme_Bed_fabric #104
+    second: {fileID: 2100000, guid: 16050a265b187854ebba10a48cd9d2a5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MisuraEmme_Bed_fabric #107
+    second: {fileID: 2100000, guid: 0ce7ca15cd93341beb67396a494cef55, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MisuraEmme_Bed_fabric #98
+    second: {fileID: 2100000, guid: 380f0c627bd173d4cbcf89f484d29a9a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MisuraEmme_Bed_fabricl #99
+    second: {fileID: 2100000, guid: 999811521dfbf3b488f14ee31b6a2b4b, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
