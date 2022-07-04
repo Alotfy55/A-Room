@@ -3,7 +3,27 @@ guid: e47864f5c218b734c9b18a73be0948bd
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 78581b
+    second: {fileID: 2100000, guid: a5b1330b5261c984b8fafbb45d8d9691, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood_Cherry_Original
+    second: {fileID: 2100000, guid: a5b1330b5261c984b8fafbb45d8d9691, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _Charcoal_
+    second: {fileID: 2100000, guid: 84f000c4eac2d20408a0a5dba4eb4881, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: skp_front_default
+    second: {fileID: 2100000, guid: a5b1330b5261c984b8fafbb45d8d9691, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
