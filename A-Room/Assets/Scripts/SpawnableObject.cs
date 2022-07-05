@@ -92,6 +92,7 @@ public class SpawnableObject : MonoBehaviour
                 {
                     addLeanComponents(spawnablePrefab); // Add components to current prefab.
                     SpawnPrefab(); // Instantiate an object in the ar scene
+                    
                     cancel.gameObject.SetActive(false);
                     //setMaterial(mat);
                     picked = false;
@@ -165,7 +166,7 @@ public class SpawnableObject : MonoBehaviour
         if (leanScale == null)
         {
             LeanPinchScale ls = prefab.AddComponent<LeanPinchScale>();
-            ls.Use.RequiredFingerCount = 2;
+            ls.Use.RequiredFingerCount = 3;
             ls.Camera = GameObject.Find("AR Camera").GetComponent<Camera>();
             ls.Sensitivity = 2;
         }

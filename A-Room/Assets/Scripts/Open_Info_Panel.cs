@@ -21,9 +21,9 @@ public class Open_Info_Panel : MonoBehaviour
         w = info_panel.transform.GetChild(8).gameObject;
         h = info_panel.transform.GetChild(9).gameObject;
 
-        l.GetComponent<Text>().text += Mathf.Round(FindObjectOfType<ObjectDeletion>().getParent().GetComponent<Renderer>().bounds.size.x * 100) + "  CM";
-        w.GetComponent<Text>().text += Mathf.Round(FindObjectOfType<ObjectDeletion>().getParent().GetComponent<Renderer>().bounds.size.z * 100) + "  CM";
-        h.GetComponent<Text>().text += Mathf.Round(FindObjectOfType<ObjectDeletion>().getParent().GetComponent<Renderer>().bounds.size.y * 100) + "  CM";
+        l.GetComponent<Text>().text = "Length  : " + Mathf.Round(FindObjectOfType<ObjectDeletion>().getParent().GetComponent<Renderer>().bounds.size.x * 100) + "  CM";
+        w.GetComponent<Text>().text = "Width   : " + Mathf.Round(FindObjectOfType<ObjectDeletion>().getParent().GetComponent<Renderer>().bounds.size.z * 100) + "  CM";
+        h.GetComponent<Text>().text = "Height  : " + Mathf.Round(FindObjectOfType<ObjectDeletion>().getParent().GetComponent<Renderer>().bounds.size.y * 100) + "  CM";
 
     }
 }
